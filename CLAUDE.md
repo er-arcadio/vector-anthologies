@@ -6,6 +6,11 @@ This file orients an agent (or collaborator) working in this repo. Read this fir
 
 Development and canon repo for the *Vector* series (primary story) and a secondary anthology roster (future, separate continuity — see `reference/`). The goal is a structure any agent can search and cite accurately without re-reading one giant document.
 
+## Before outlining a new arc or story
+
+1. Read `writing-guide/character-journey-worksheet.md` and fill one out per POV/major character.
+2. Read `writing-guide/outline-checklist.md` and run the event sequence through it before handing anything off to be drafted as prose.
+
 ## Before writing any prose
 
 1. Read `writing-guide/style-guide.md` — tone, voice, and prose rules. Non-negotiable.
@@ -18,7 +23,7 @@ Development and canon repo for the *Vector* series (primary story) and a seconda
 
 - `story-bible/` — Eli/Vector's canon: world, characters, villains, power system, arc-by-arc outline, foreshadowing, open questions, active action items.
 - `reference/superhero-reference-book/` — a **separate, not-yet-connected** hero roster for future anthology entries. Do not treat as Vector canon unless a story explicitly crosses over.
-- `writing-guide/` — style guide, story laws, and the reader-preference research behind the style guide's prose defaults. Read before writing.
+- `writing-guide/` — outlining tools (checklist + character worksheet), style guide, story laws, and the reader-preference research behind the style guide's prose defaults. Read before outlining and before writing.
 - `stories/` — actual short story drafts live here. Currently empty; see its `CLAUDE.md` for naming/filing conventions.
 - `TODO.md` — cross-cutting backlog for tooling/process work (e.g. an eval harness for checking drafts against the writing guide). Separate from `story-bible/action-items-v5.1.md`, which is the narrative-development queue.
 

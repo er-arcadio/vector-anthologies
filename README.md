@@ -36,11 +36,13 @@ reference/
     ├── 01-warewolf.md … 07-chicle.md
     └── power-convergence-guide.md   Power-tier calibration reference (domains, ceilings)
 
-writing-guide/                  Read before writing any story
+writing-guide/                  Read before outlining or drafting any story
 ├── CLAUDE.md
-├── style-guide.md              Tone, voice, prose technique — the drafting-ready version to follow
-├── story-laws.md               Hard canon constraints — not preferences
-└── fiction-style-profile.md    Where style-guide.md's prose-preference rules come from (real books ranked against each other) — still preference rules, just in research form rather than drafting-ready
+├── outline-checklist.md            Checklist for sequencing events before any scene is written
+├── character-journey-worksheet.md  Per-character template, filled out before outlining (outline-checklist.md's Section 0)
+├── style-guide.md                  Tone, voice, prose technique — the drafting-ready version to follow
+├── story-laws.md                   Hard canon constraints — not preferences
+└── fiction-style-profile.md        Where style-guide.md's prose-preference rules come from (real books ranked against each other) — still preference rules, just in research form rather than drafting-ready
 
 stories/                        Actual short story drafts (currently empty)
 └── CLAUDE.md                   Filing conventions, frontmatter, canon_status
