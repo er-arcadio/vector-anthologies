@@ -21,8 +21,9 @@ Adult content, including sex scenes, is permitted where it serves character arc 
 
 ## Narrative voice
 
-- **Present tense is the default** for POV-holding protagonists. The reader moves through events as the character experiences them, not from a distanced retrospective vantage.
-- **Past tense is circumstantial, not a scheduled exception.** Use it when the narrator is explicitly reflecting back on something already resolved, or recounting/telling a story within the story (relaying an earlier event to someone else, a remembered scene framed as memory). When past tense is doing this work, let the gap between the narrating self and the remembered self show on the page rather than explaining it outright. Don't reserve tense shifts for "big" moments on a schedule — the choice should track a real in-scene reason to look back, not a checklist.
+- **Retrospective first person, rendered in present tense by default.** An older, integrated version of the POV character is telling this story after the fact — that's who is narrating, and the gap between who's narrating and who's being depicted is still part of the character arc. But the prose itself defaults to present tense (a "historical present"), so the reader moves through events as they happen rather than sitting at the narrator's remove the whole time. Retrospective is the narrator's identity; present tense is the default register they tell it in.
+- **Past tense is circumstantial, not a scheduled exception.** Use it when the narrator explicitly steps back into reflection — on something already resolved, or recounting/telling a story within the story (relaying an earlier event to someone else, a remembered scene framed as memory). When past tense is doing this work, let the gap between the narrating self and the remembered self show on the page rather than explaining it outright — this is the retrospective distance becoming visible. Don't reserve tense shifts for "big" moments on a schedule — the choice should track a real in-scene reason to look back, not a checklist.
+- **Present-tense breaks, still real.** Don't let the story's most overwhelming beats get told at reflective distance. If a passage has drifted into past-tense reflection, its most alive moment should snap back into present tense — the narrator briefly losing control of his own distance. Present tense is already the default everywhere else, so in practice this rule mostly matters *inside* a past-tense passage: it's where a flashback or told-story stops being safely distant and becomes immediate again.
 - **Omniscient narrator**, used for antagonist interiority or scenes the protagonist isn't present for: flat, even prose. Wrong or unsettling details are treated as ordinary — no dramatic emphasis, no dread music. The horror lives in the flatness, not in the framing.
 
 ## The horror register — how to write the hum
@@ -36,9 +37,9 @@ This is the hardest instruction to get right and the easiest to overdo. Rules of
 
 ## Dialogue
 
-- **Default to sustained, uninterrupted exchanges.** Once a scene is in dialogue, stay in it — let a conversation run for a real stretch rather than cutting back to narration between nearly every line. Save a narration beat for when it's actually doing work (a physical action, a pause that changes the scene), not as a rhythmic habit between exchanges. See `fiction-style-profile.md` for the reasoning behind this default.
-- **Subtext still rules** — the most important conversations are often the ones that "never say what they're actually about." But that subtext should live in the dialogue itself (word choice, deflection, what's left unsaid) rather than being supplied by narration commentary wedged between lines.
-- Don't over-explain a relationship in dialogue that's already been established through action.
+- **Sparse and sustained — not either/or.** Keep individual lines terse and unexplained: subtext should live in word choice and deflection, not in narration stepping in to interpret. And once a scene is in dialogue, stay in it — let the exchange run for a real stretch rather than cutting back to narration between nearly every line. These are different axes (how much any one line says vs. how often narration interrupts), and the model for having both at once is Higgins-style dialogue: short, clipped lines, run consecutively with almost no narration between them. See `fiction-style-profile.md` for the reasoning behind the sustained-exchange half of this.
+- The most important conversations are often the ones that "never say what they're actually about." Don't over-explain a relationship in dialogue that's already been established through action.
+- Reserve a narration beat for when it's actually doing work (a physical action, a pause that changes the scene) — not as a rhythmic habit between lines.
 
 ## Fight writing
 
