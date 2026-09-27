@@ -52,11 +52,15 @@ arc.
 
 **Narrative Voice & Presentation**
 
--   **Eli's retrospective narrator:** First person. An older integrated version looking back. The gap between who narrates and who is depicted IS the character arc made audible.
+(See `../writing-guide/style-guide.md` for the current, canonical version of these rules — kept here in sync, with Eli-specific examples.)
+
+-   **Eli's retrospective narrator:** First person. An older, integrated version of Eli is telling this story after the fact — that's who narrates, and the gap between who narrates and who is depicted IS the character arc made audible. But the prose defaults to present tense (a "historical present"), so the reader moves through events as Eli experiences them rather than sitting at his older self's remove the whole time.
 
 -   **Omniscient narrator:** Used for Vinny's interior life and home scenes. Flat, even prose --- wrong details treated as ordinary, no dramatic emphasis. Small doses of Eli's POV show how Vinny is misread. The gap between Eli's readings and the omniscient reality is the story's dramatic irony made structural.
 
--   **Present tense breaks:** During overwhelmingly alive memories the retrospective voice slips into present tense. The Shockwave killing. The first morning with Iris. His mother's death. The science center moment in the final fight.
+-   **Past tense, circumstantially:** used when Eli is explicitly reflecting back on something already resolved, or telling a story within the story (recounting an earlier event to someone else). When this happens, let the gap between the narrating self and the remembered self show on the page — that's the retrospective distance becoming visible.
+
+-   **Present tense breaks, still real:** during overwhelmingly alive memories, don't let the telling sit at reflective distance — the Shockwave killing, the first morning with Iris, his mother's death, the science center moment in the final fight. If a passage has drifted into past-tense reflection, these are exactly where it should snap back into present tense: the narrator briefly losing control of his own distance. Present tense is already the default elsewhere, so this now mostly matters *inside* a flashback or told-story that would otherwise stay safely past-tense.
 
 -   **Opening:** A glimpse of the Shockwave killing --- Eli alone, hands, city quiet. Then his 16th birthday. Cake. Family tension. The contrast between those two images is the entire story in two pages.
 
