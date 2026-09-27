@@ -11,6 +11,10 @@ Consolidated from the original story bible's tone/genre notes and the craft inst
 
 Prose first, always. Novel/short-story form takes priority over any illustrated or hybrid treatment. A double-page illustration per chapter is a possible later layer — never a substitute for the prose doing the work.
 
+## Length
+
+Standalone short stories in `stories/` target **1,500–4,000 words**. This is a deliberately wide band, not a checkpoint to hit: it's long enough to earn a real turn (a scene or two, not just a mood), short enough to draft, finish, and evaluate in one sitting or two. A piece that wants to run past 4,000 words isn't wrong — flag it and decide deliberately whether it's actually a short story stretching or the start of something arc-length; don't pad or chop to fit the band. This target is separate from the eventual novel-length prose the `story-bible/` arcs are outlined for.
+
 ## Tone blend (target ratio)
 
 - **60% Action Drama** — grounded coming-of-age material: responsibility, grief, identity, releasing inherited expectations, real love, finding purpose.

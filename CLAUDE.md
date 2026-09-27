@@ -13,11 +13,15 @@ Development and canon repo for the *Vector* series (primary story) and a seconda
 
 ## Before writing any prose
 
-1. Read `writing-guide/style-guide.md` — tone, voice, and prose rules. Non-negotiable.
+1. Read `writing-guide/style-guide.md` — tone, voice, and prose rules (including the 1,500–4,000 word short-story length target). Non-negotiable.
 2. Read `writing-guide/story-laws.md` — hard canon constraints that must never be contradicted.
 3. Read the relevant `story-bible/` files for the character/arc/power involved. Treat `story-bible/` as source of truth; never invent canon that isn't there without flagging it as new.
 4. Check `story-bible/foreshadowing-map.md` and `story-bible/plot-twist-inventory.md` — do not accidentally pay off, contradict, or prematurely reveal a seeded thread.
 5. New short stories go in `stories/`, never in `story-bible/`. `story-bible/` is canon reference, not prose.
+
+## After writing a draft
+
+Run it against `writing-guide/eval-checklist.md` before treating it as done, and record the result in the story's `eval_status` frontmatter (see `stories/CLAUDE.md`).
 
 ## Folder map
 
@@ -27,7 +31,7 @@ Development and canon repo for the *Vector* series (primary story) and a seconda
 - `themes/` — thematic source material (life-lessons content) that might surface across the anthology; not decided yet how or where. See its `CLAUDE.md` — it's distinct from `story-bible/moral-framework.md`, which is in-world canon.
 - `stories/` — actual short story drafts live here. Currently empty; see its `CLAUDE.md` for naming/filing conventions, including the required `date` frontmatter field.
 - `scripts/build_site.py` — generates the GitHub Pages reading site (a timeline feed of everything in `stories/`) from each story's frontmatter. Deployed automatically by `.github/workflows/pages.yml` on every push to `main`. Update this if the site's look or behavior needs to change; no need to touch it just to publish a new story.
-- `TODO.md` — cross-cutting backlog for tooling/process work (e.g. an eval harness for checking drafts against the writing guide). Separate from `story-bible/action-items-v5.1.md`, which is the narrative-development queue.
+- `TODO.md` — cross-cutting backlog for tooling/process work. Separate from `story-bible/action-items-v5.1.md`, which is the narrative-development queue. The eval harness for checking drafts against the writing guide is built — see `writing-guide/eval-checklist.md`.
 
 ## Key naming note
 
@@ -35,4 +39,4 @@ The *Vector* villain formerly called "Blink" is now **Twitch** (`story-bible/vil
 
 ## Status flags worth knowing about
 
-Files with unresolved development needs carry a `status:` line in their frontmatter. As of this writing: `story-bible/characters/iris.md`, `story-bible/plot-outline/arc-08.md`, `story-bible/action-items-v5.1.md` (active priority queue), and two files in the reference roster. Check `story-bible/action-items-v5.1.md` for the current priority order before assuming a thread is settled.
+Files with unresolved development needs carry a `status:` line in their frontmatter. As of this writing: `story-bible/characters/iris.md`, `story-bible/plot-outline/arc-08.md`, and `reference/superhero-reference-book/05-vampire-doctor.md` and `06-blink.md`. `story-bible/action-items-v5.1.md` doesn't carry a `status:` field itself but *is* the active priority queue — check it for the current priority order before assuming a thread is settled.

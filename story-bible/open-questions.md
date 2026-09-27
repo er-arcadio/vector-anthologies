@@ -27,11 +27,13 @@ tags: [open-questions, todo]
 
 -   **The girl from the other world:** Who is she? What is her power? What draws Eli to her across the loyalty line he ultimately doesn't cross?
 
--   **Maya encounter timing:** Arc 7 or Arc 9? Recommend Arc 9 after return --- her weight has had time to settle.
-
 -   **Vinny's whereabouts after Arc 7:** Where does closing the door take him? Is he alive in Arcs 8 and 9? Does he return for the final battle?
 
 -   **The devil's endgame:** What does the devil actually want? Is it ever named or does it remain purely atmospheric?
+
+**Resolved**
+
+-   **Maya encounter timing:** Two separate, intentional encounters, not a duplicate. Arc 7 (`plot-outline/arc-07.md`): brief, non-adversarial, mid-confrontation intel drop about Vinny, then she leaves — functional, plot-driving. Arc 9 (`plot-outline/arc-09.md`): part of the return/reunion sweep alongside Iris — her weight has had time to settle, this is the real reunion. See the notes added to both arc files.
 
 **Recommended Writing Order**
 

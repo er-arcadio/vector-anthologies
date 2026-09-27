@@ -13,7 +13,7 @@ tags: [plot, arc-7]
 
 -   **Father conversation:** Eli tells his father who he is and what he's done. Doesn't require a particular response. The most grown-up thing he does in the entire story. The father's admission of suspicion here. The Maya erasure means a previous breakthrough exists only on Eli's side. He starts over from behind. The choice to tell his father anyway is more costly and more meaningful for it.
 
--   **Maya encounter:** Not adversarial. She tells him something about Vinny she read in the city's mind during Arc 6. A human detail that reframes the final confrontation. Then she leaves.
+-   **Maya encounter (1 of 2 — see also Arc 9):** Not adversarial. She tells him something about Vinny she read in the city's mind during Arc 6. A human detail that reframes the final confrontation. Then she leaves. This is a brief, functional, plot-driving beat, distinct from the real reunion in Arc 9 — not a duplicate of it.
 
 **MAIN: VINNY BLACK --- THE FINAL CONFRONTATION**
 

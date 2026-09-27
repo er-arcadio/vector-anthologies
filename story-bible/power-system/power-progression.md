@@ -34,14 +34,4 @@ does in the entire story. No power. Just a fist.
 
 **Physical Consequences of Power Use**
 
--   **Stage 3:** No meaningful cost. Effortless. Like walking.
-
--   **Stage 2 overuse:** Cognitive and physical fatigue. Mental fog, physical heaviness, glucose crash equivalent. **Stage 2 costs him after.**
-
--   **Stage 1 overuse:** Immediate neurological disruption. Tinnitus, spatial disorientation, field perception stuttering. Cannot be pushed through. **Stage 1 costs him during.**
-
--   **Cumulative effects:** Chronic overuse produces persistent low-grade cognitive fog. The meditation retreat in Arc 6 is partly about recovering from years of cumulative overuse he never properly addressed.
-
--   **Sensory overload:** In chaotic environments the volume of simultaneous field sensing becomes genuinely overwhelming. His strength becomes a liability when the environment is too complex.
-
--   **Morality as active constraint:** There are moments where Eli could end a confrontation immediately by doing something he won't do. This costs him fights. The audience feels it as tension not just theme.
+See `physical-consequences-and-canon.md` for the full breakdown (Stage 1/2/3 costs, cumulative effects, sensory overload, morality as active constraint) — kept in one place to avoid the two files drifting out of sync.

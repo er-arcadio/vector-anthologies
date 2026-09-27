@@ -31,6 +31,7 @@ Each story file should open with light frontmatter for lookup:
 title: "Story Title"
 tags: [story, arc-X, character-name]
 canon_status: draft | canon | non-canon
+eval_status: unreviewed | passed | flagged
 date: YYYY-MM-DD
 ---
 ```
@@ -38,6 +39,10 @@ date: YYYY-MM-DD
 ## `canon_status` matters
 
 Not every short story needs to be treated as binding canon. Mark clearly whether a piece is meant to lock in new story-bible facts (in which case the relevant `story-bible/` file should be updated to match once the story is finalized) or is a non-canon "what if" / side piece.
+
+## `eval_status` and the eval checklist
+
+Before a story counts as done, run it against `../writing-guide/eval-checklist.md` — length, style-guide compliance, story-laws compliance, and a check against `../story-bible/foreshadowing-map.md` and `../story-bible/plot-twist-inventory.md`. Record the result in `eval_status`. A flagged story can still be filed as `canon_status: draft`, but shouldn't move to `canon_status: canon` (i.e. get folded back into `story-bible/`) with an open flag on a canon-facing check. If anything's flagged, add a short `<!-- eval notes -->` comment at the bottom of the story file itself — see the checklist for what to record.
 
 ## `date` is required
 
