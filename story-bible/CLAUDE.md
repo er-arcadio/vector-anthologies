@@ -15,5 +15,6 @@ This is canon reference for the Vector series, not prose. Never draft story text
 
 - `00-story-identity.md` — logline, core themes, tone/genre split, narrative voice rules (also consolidated into `../writing-guide/style-guide.md`)
 - `01-world.md` — setting, the accident, society's response arc-by-arc
+- `moral-framework.md` — the world's ambient moral/spiritual framework: assumed and unconfronted on Earth (Arcs 1–7), absent and confronted on the Arc 8 planet
 - `eli-character-arc.md` — the five-phase arc (Containment → Justification → Fracture → Dissolution → Integration)
 - `suit-evolution.md` — what Eli's suit looks like/means at each arc

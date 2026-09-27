@@ -21,9 +21,10 @@ Development and canon repo for the *Vector* series (primary story) and a seconda
 
 ## Folder map
 
-- `story-bible/` — Eli/Vector's canon: world, characters, villains, power system, arc-by-arc outline, foreshadowing, open questions, active action items.
+- `story-bible/` — Eli/Vector's canon: world, moral framework, characters, villains, power system, arc-by-arc outline, foreshadowing, open questions, active action items.
 - `reference/superhero-reference-book/` — a **separate, not-yet-connected** hero roster for future anthology entries. Do not treat as Vector canon unless a story explicitly crosses over.
 - `writing-guide/` — outlining tools (checklist + character worksheet), style guide, story laws, and the reader-preference research behind the style guide's prose defaults. Read before outlining and before writing.
+- `themes/` — thematic source material (life-lessons content) that might surface across the anthology; not decided yet how or where. See its `CLAUDE.md` — it's distinct from `story-bible/moral-framework.md`, which is in-world canon.
 - `stories/` — actual short story drafts live here. Currently empty; see its `CLAUDE.md` for naming/filing conventions.
 - `TODO.md` — cross-cutting backlog for tooling/process work (e.g. an eval harness for checking drafts against the writing guide). Separate from `story-bible/action-items-v5.1.md`, which is the narrative-development queue.
 

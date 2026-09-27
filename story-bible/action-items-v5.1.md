@@ -38,7 +38,7 @@ at a time, in order, before moving to the next.*
 
 -   **Design the planet's world logic from scratch:** physics differences, culture, stakes --- must not read as Colombia with aliens.
 
--   **Define the unique lesson:** what this arc teaches Eli that Colombia and Earth could not. This is what justifies the second "master of two worlds" cycle instead of feeling redundant.
+-   **Define the unique lesson:** what this arc teaches Eli that Colombia and Earth could not. This is what justifies the second "master of two worlds" cycle instead of feeling redundant. **Shape now settled** — see `../moral-framework.md`: the planet lacks Earth's ambient moral framework, forcing Eli to confront whether his own ethics survive without their usual cultural scaffolding. Still open: whether the planet has *no* framework or a genuinely different, competing one (see that file's "Open" note).
 
 -   **Build the supers he meets as real characters:** not just a mentor-arc backdrop --- give them their own stakes.
 

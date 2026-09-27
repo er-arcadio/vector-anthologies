@@ -94,22 +94,24 @@ tags: [reference, power-system, domains, calibration]
 
 *For calibrating a roster power against a known "clean, isolated" comparison — a character whose power set doesn't stack multiple abilities.*
 
-| Power | Reference hero | Why |
-|---|---|---|
-| Super speed | Quicksilver | No Speed Force time-travel baggage |
-| Flight | Angel (Warren Worthington) | Flight without strength/energy add-ons |
-| Teleportation | Nightcrawler | Clean, isolated teleporter |
-| Portals | Gateway | Portal-only, rarely used |
-| Gravity | Graviton | Clean single-domain villain |
-| Telekinesis | Vance Astrovik (Justice) | TK without telepathy |
-| Shapeshifting | Mystique | No secondary powers |
-| Regeneration | Deadpool | Claws are skill, not a second power |
-| Density | Blob | Mass/density is his whole gimmick |
-| Magnetism | Magneto | The textbook case |
-| Telepathy | Professor X | No TK in most continuities |
-| Precognition | Destiny | Purely passive foresight |
-| Probability | Domino | Luck-only, no reality-warping |
-| Reality | Franklin Richards / Molecule Man | About as isolated as reality-warping gets |
-| Energy | Havok | Plasma blasts, no flight/strength tacked on |
-| Illusion/perception | Mirage / Mastermind | Projects false sensory info, not telepathy |
-| Causality | — | No clean isolated comics example found |
+| Power | Reference hero | Chart position | Why |
+|---|---|---|---|
+| Super speed | Quicksilver | A — relativistic velocity | No Speed Force time-travel baggage |
+| Flight | Angel (Warren Worthington) | B — fast aerial | Flight without strength/energy add-ons |
+| Teleportation | Nightcrawler | B — long range | Clean, isolated teleporter; range capped at a few miles in most continuity |
+| Portals | Gateway | A/S — battlefield to interplanetary/dimensional gateways | Portal-only, rarely used |
+| Gravity | Graviton | S — planetary control, brushing BROKEN | Clean single-domain villain |
+| Telekinesis | Vance Astrovik (Justice) | B/A — people/vehicles, multi-object precision | TK without telepathy |
+| Shapeshifting | Mystique | B — anatomy-level, cosmetic/DNA mimicry | No secondary powers |
+| Regeneration | Deadpool | S — near molecular reconstruction | Claws are skill, not a second power |
+| Density | Blob | B/A — dense/immovable, not extreme compression | Mass/density is his whole gimmick |
+| Magnetism | Magneto | S — brushing BROKEN, continent/planet-scale EM | The textbook case |
+| Telepathy | Professor X | S — large-scale mental control (Onslaught, AoA-level feats) | No TK in most continuities |
+| Precognition | Destiny | S — near-complete future awareness | Purely passive foresight |
+| Probability | Domino | C/B — minor luck, biased outcomes | Luck-only, no reality-warping |
+| Reality | Franklin Richards / Molecule Man | BROKEN — creation/destruction + rule rewriting | About as isolated as reality-warping gets |
+| Energy | Havok | B/A — large transfers, transform energy forms | Plasma blasts, no flight/strength tacked on |
+| Illusion/perception | Mirage / Mastermind | B — convincing illusions, not mass-scale | Projects false sensory info, not telepathy |
+| Causality | — | — | No clean isolated comics example found |
+
+*Chart position is an approximate read of each character's most consistent canon feats against the C→BROKEN tiers in the domain tables above — comics writers vary hero power levels across eras/writers, so treat this as a reference point, not a fixed ceiling for the character.*

@@ -13,6 +13,7 @@ story-bible/                    Eli/Vector's story — the primary series (canon
 ├── CLAUDE.md
 ├── 00-story-identity.md        Logline, themes, tone, narrative voice
 ├── 01-world.md                 Setting, the accident, society's response
+├── moral-framework.md          The world's moral/spiritual framework — ambient on Earth, confronted on the Arc 8 planet
 ├── characters/                 Eli, Iris, the physics teacher, Vinny
 │   └── CLAUDE.md
 ├── villains/                   One file per villain (Brick, Shockwave, Twitch, Tide, Simone, Maya Vale, Bill Voss, Joel Mara)
@@ -43,6 +44,11 @@ writing-guide/                  Read before outlining or drafting any story
 ├── style-guide.md                  Tone, voice, prose technique — the drafting-ready version to follow
 ├── story-laws.md                   Hard canon constraints — not preferences
 └── fiction-style-profile.md        Where style-guide.md's prose-preference rules come from (real books ranked against each other) — still preference rules, just in research form rather than drafting-ready
+
+themes/                          Thematic source material (life-lessons content), not yet tied to a specific story
+├── CLAUDE.md
+├── lessons-for-young-men.md            General-audience life lessons
+└── lessons-for-young-men-adult.md      Same source, 18+ material (content_rating: adult)
 
 stories/                        Actual short story drafts (currently empty)
 └── CLAUDE.md                   Filing conventions, frontmatter, canon_status

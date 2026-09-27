@@ -6,6 +6,8 @@ status: least developed — see action-items-v5.1.md
 
 # Arc 8 — The Other Planet
 
+-   **The unique lesson (see `../moral-framework.md`):** the planet has no equivalent to Earth's ambient moral framework — Eli's sense of right and wrong loses its usual cultural scaffolding here, for the first time. Whether that scaffolding turns out load-bearing or not is the arc's real question, underneath the survival/mentor plot.
+
 -   Survival on the strange planet. Isolation. The devil's influence fueling loneliness toward something darker.
 
 -   Power works but imperfectly --- unfamiliar physics humbles him. Back to Arc 1 in the most meaningful way. He has been humbled before at the Colombia retreat. He knows what rebuilding feels like. The planet doesn't break him the way it would have broken Arc 5 Eli.

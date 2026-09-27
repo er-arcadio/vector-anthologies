@@ -7,6 +7,14 @@ tags: [writing-guide, canon, rules, continuity]
 
 Hard constraints. Unlike the style guide, these are not preferences — violating one is a canon break. If a story idea requires breaking one of these, stop and flag it for a decision rather than quietly deciding it yourself.
 
+## Characterization — no moral framing
+
+This applies anthology-wide: every "villain" in `story-bible/villains/`, every hero/villain in `reference/superhero-reference-book/`, and any character in future work.
+
+- **No character is narrated as objectively good or evil.** Moral judgment comes only from whichever POV the scene is in — Eli's read on someone is Eli's, not the narration's, and should be legible as a read rather than as fact.
+- **Absent a POV filter (e.g. the omniscient register), present competing philosophies, not verdicts.** A villain's worldview should be coherent enough to argue for on its own terms — the story doesn't need to agree with it, but it shouldn't stack the deck either.
+- Let actions and consequences do the work. If a character's choices are indefensible, that should be visible in what happens, not asserted by the narration.
+
 ## Power system
 
 - **Vector's power is knowledge-dependent and this rule never breaks.** His ceiling scales with his comprehension of reality. He can only control what he comprehends. No exceptions, no convenient one-off power-ups that bypass this.
@@ -36,6 +44,7 @@ Some threads were deliberately left open in the source material. Do not confirm,
 
 - Check `story-bible/plot-outline/` for the arc a new story is set in, and `story-bible/foreshadowing-map.md` + `story-bible/plot-twist-inventory.md` before writing — a short story set inside an existing arc must not contradict a seed or payoff already placed there.
 - Character ages, power stages (Think/Know/Feel-Become — see `story-bible/power-system/power-progression.md`), and relationship status are all arc-locked. Don't borrow a later-arc capability or relationship beat into an earlier-set story.
+- **The world's moral framework (`story-bible/moral-framework.md`) is Era-locked.** Earth-set material (Arcs 1–7) must treat it as ambient, unexplained texture — never confronted, argued for, or rationalized on the page. The confrontation is reserved for Arc 8. Don't let an earlier short story accidentally do that work first.
 
 ## Reference roster boundary
 
