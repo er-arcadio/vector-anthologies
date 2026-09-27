@@ -25,7 +25,8 @@ Development and canon repo for the *Vector* series (primary story) and a seconda
 - `reference/superhero-reference-book/` — a **separate, not-yet-connected** hero roster for future anthology entries. Do not treat as Vector canon unless a story explicitly crosses over.
 - `writing-guide/` — outlining tools (checklist + character worksheet), style guide, story laws, and the reader-preference research behind the style guide's prose defaults. Read before outlining and before writing.
 - `themes/` — thematic source material (life-lessons content) that might surface across the anthology; not decided yet how or where. See its `CLAUDE.md` — it's distinct from `story-bible/moral-framework.md`, which is in-world canon.
-- `stories/` — actual short story drafts live here. Currently empty; see its `CLAUDE.md` for naming/filing conventions.
+- `stories/` — actual short story drafts live here. Currently empty; see its `CLAUDE.md` for naming/filing conventions, including the required `date` frontmatter field.
+- `scripts/build_site.py` — generates the GitHub Pages reading site (a timeline feed of everything in `stories/`) from each story's frontmatter. Deployed automatically by `.github/workflows/pages.yml` on every push to `main`. Update this if the site's look or behavior needs to change; no need to touch it just to publish a new story.
 - `TODO.md` — cross-cutting backlog for tooling/process work (e.g. an eval harness for checking drafts against the writing guide). Separate from `story-bible/action-items-v5.1.md`, which is the narrative-development queue.
 
 ## Key naming note
