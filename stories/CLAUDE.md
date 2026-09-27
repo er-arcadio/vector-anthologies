@@ -7,8 +7,10 @@ This is where actual prose lives. Currently empty — a `.gitkeep` placeholder i
 Read, in order:
 1. `../writing-guide/style-guide.md`
 2. `../writing-guide/story-laws.md`
-3. The relevant `../story-bible/` files for whichever characters/arc/powers the story touches
-4. `../story-bible/foreshadowing-map.md` and `../story-bible/plot-twist-inventory.md` — check nothing here is contradicted or prematurely paid off
+3. `../writing-guide/character-journey-worksheet.md` — check `../story-bible/characters/` for an already-filled instance (e.g. `eli-reyes-journey-worksheet.md`) before re-deriving a character's want/need from scratch
+4. `../writing-guide/outline-checklist.md` — run the event sequence through it; this is where the story's A-to-B (starting point, want, obstacle, resolution) actually gets nailed down before drafting
+5. The relevant `../story-bible/` files for whichever characters/arc/powers the story touches — for anything in Arcs 1–7, start with `../story-bible/plot-outline/era-1-overview.md`
+6. `../story-bible/foreshadowing-map.md` and `../story-bible/plot-twist-inventory.md` — check nothing here is contradicted or prematurely paid off
 
 ## Filing convention
 
@@ -34,7 +36,21 @@ canon_status: draft | canon | non-canon
 eval_status: unreviewed | passed | flagged
 date: YYYY-MM-DD
 ---
+
+<!-- story shape
+POV: 
+Want: 
+Need: 
+Point A (starting state): 
+Point B (ending state): 
+Obstacle (external | interpersonal | internal): 
+Resolution and its cost: 
+-->
 ```
+
+## The "story shape" block is required
+
+Every story needs a protagonist moving from a starting point to a changed one, a want, and a real obstacle — not just a mood or an image. Fill in the `<!-- story shape -->` block above from the `character-journey-worksheet.md` / `outline-checklist.md` pass you already ran before drafting (see "Before writing a story here"). This makes the want/need/obstacle/resolution visible and reviewable instead of something the outline stage privately assumed and the reader has to reverse-engineer. Keep it in the file — it's cheap context for the next person (or agent) who touches this story, and it's the first thing `eval-checklist.md` checks.
 
 ## `canon_status` matters
 

@@ -17,7 +17,8 @@ story-bible/                    Eli/Vector's story — the primary series (canon
 ├── 01-world.md                 Setting, the accident, society's response
 ├── moral-framework.md          The world's moral/spiritual framework — ambient on Earth, confronted on the Arc 8 planet
 ├── characters/                 Eli, Iris, the physics teacher, Vinny
-│   └── CLAUDE.md
+│   ├── CLAUDE.md
+│   └── eli-reyes-journey-worksheet.md   Filled character-journey-worksheet for Eli (series + per-phase want/need/obstacle)
 ├── villains/                   One file per villain (Brick, Shockwave, Twitch, Tide, Simone, Maya Vale, Bill Voss, Joel Mara)
 │   └── CLAUDE.md
 ├── power-system/               Power rules, progression, abilities table
@@ -25,7 +26,8 @@ story-bible/                    Eli/Vector's story — the primary series (canon
 ├── eli-character-arc.md        Five-phase character arc
 ├── suit-evolution.md
 ├── plot-outline/               One file per arc (opening + arcs 1–9)
-│   └── CLAUDE.md
+│   ├── CLAUDE.md
+│   └── era-1-overview.md       Starting point / want / obstacle / resolution per arc, Arcs 1–7 (draft, pending author agreement)
 ├── foreshadowing-map.md
 ├── plot-twist-inventory.md
 ├── open-questions.md           Original unresolved decisions
@@ -53,8 +55,9 @@ themes/                          Thematic source material (life-lessons content)
 ├── lessons-for-young-men.md            General-audience life lessons
 └── lessons-for-young-men-adult.md      Same source, 18+ material (content_rating: adult)
 
-stories/                        Actual short story drafts (currently empty)
-└── CLAUDE.md                   Filing conventions, frontmatter, canon_status, date field
+stories/                        Actual short story drafts
+├── CLAUDE.md                   Filing conventions, frontmatter, canon_status, date field, required story-shape block
+└── vector/arc-05/the-name-first.md   First draft, currently flagged — see its eval notes
 
 scripts/                        Tooling for the repo itself (not story content)
 ├── build_site.py               Static site generator for the GitHub Pages reading site
@@ -76,5 +79,5 @@ This repo publishes itself as a GitHub Pages site: a Reddit/Twitter/Tumblr-inspi
 
 - **Naming:** the *Vector* villain formerly called "Blink" (super speed, Arcs 3–4) has been renamed **Twitch** to avoid collision with the separate reference-roster hero **Blink** (teleportation, hummingbird totem — not yet part of the main story).
 - **Frontmatter:** every file has YAML frontmatter (`title`, `tags`, and where relevant `status`/`related`) for quick lookup and filtering.
-- **Status flags:** files with an open development need carry a `status:` line — currently `characters/iris.md`, `plot-outline/arc-08.md`, and `reference/superhero-reference-book/05-vampire-doctor.md` and `06-blink.md`.
+- **Status flags:** files with an open development need carry a `status:` line — currently `characters/iris.md`, `plot-outline/arc-08.md`, `plot-outline/era-1-overview.md` (draft, pending author agreement), and `reference/superhero-reference-book/05-vampire-doctor.md` and `06-blink.md`.
 - **Source:** migrated from *Vector Story Bible v5.1* and *Superhero Reference Book*. Treat this repo as the source of truth going forward; update files directly rather than the original docs.

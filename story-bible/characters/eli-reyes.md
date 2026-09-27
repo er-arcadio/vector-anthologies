@@ -1,7 +1,7 @@
 ---
 title: "Eli Reyes — Vector"
 tags: [character, protagonist, eli, vector]
-related: [eli-character-arc]
+related: [eli-character-arc, eli-reyes-journey-worksheet]
 ---
 
 # Eli Reyes — Vector
@@ -11,6 +11,8 @@ related: [eli-character-arc]
 -   **Appearance:** Dark-skinned Latino-American. Jersey City, NJ. Visibly more muscular and physically confident from Arc 3 onward.
 
 -   **Before powers:** Shy, spiritually and emotionally guarded. Fleeting eye contact, upward vocal tonality, uncertain about what he wants. Hard to have fun. Insecure about losses, difficulty accepting wins.
+
+-   **Mind and voice as a teenager (Arcs 1–4, roughly ages 16–21):** Brilliant at physics, math, and hard science — this is real, not just a hook. Weaker, by contrast, at reading, writing, and emotional intelligence. Not autistic, not socially awkward in a clinical sense, not illiterate or in special ed — just a normal-range teenager whose gifts and deficits both run unusually deep in the same direction. He is not especially self-aware and doesn't have an emotionally fluent vocabulary yet; he notices *what happened* and *what it caused* well before he notices *why it hurt*. He is cause-and-effect minded by nature (it's the same mind that's good at physics) and is only slowly learning to sit with ambiguity — situations with no clean mechanism, no traceable cause, no fixable variable. This should visibly loosen across the arcs as he matures; by Phase 5 (Integration, Arc 7) he has real emotional fluency he didn't have at 16. See `../../writing-guide/style-guide.md` (Narrative Voice) for how this translates into prose choices when he's the one narrating a scene at that age.
 
 -   **After first fight:** Natural confidence emerges rapidly. Talking louder, downward tonality, piercing eye contact, self-respect, not afraid to ask for what he wants. Not cockiness --- a forcing mechanism to grow up.
 

@@ -1,8 +1,8 @@
 ---
 title: "The Name First"
 tags: [story, arc-5, eli-reyes, shockwave]
-canon_status: canon
-eval_status: passed
+canon_status: draft
+eval_status: flagged
 date: 2026-09-27
 ---
 
@@ -103,6 +103,27 @@ already-internalized recurring phrase, consistent with its "all arcs" scope
 in foreshadowing-map.md. No new canon invented (mother and father left
 unnamed, consistent with existing TBD/no-name status).
 
-eval_status: passed
+--- REVISION PENDING (2026-09-27) ---
+Author reviewed this draft and did not approve it. Standards changed after
+this piece was written and it needs a rewrite once story-bible/plot-outline/
+era-1-overview.md is agreed. Specifically:
+- No `<!-- story shape -->` block exists; want/need/point A/point B/obstacle
+  were never made explicit before or after drafting. Retrofit this against
+  eli-reyes-journey-worksheet.md's Phase 3 (Fracture) row once the story is
+  reworked, not before — the outline pass should happen first, not be
+  reverse-engineered from the existing prose.
+- Word count (~2,000) is now under the revised 3,000-5,000 floor with no
+  rationale recorded.
+- The 16-year-old Eli in the birthday section reads with more self-awareness
+  and vocabulary than his canon characterization (STEM-brilliant, low EQ/
+  vocabulary, cause-and-effect minded at that age) supports — needs a pass
+  for age-appropriate interiority per the new Narrative Voice rules in
+  style-guide.md.
+- The omniscient-narrator voice update (warm, Harvard-professor-grandma,
+  vocabulary explained charmingly) doesn't apply to this piece as written
+  (first-person Eli throughout, no omniscient passages) — no action needed
+  on that front unless the rewrite adds one.
+
+eval_status: flagged
 -->
 

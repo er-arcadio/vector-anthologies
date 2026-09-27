@@ -30,13 +30,20 @@ one file per decision.
 
 ---
 
-## 0. Length
+## 0. Length and Shape
 
-- [ ] Word count falls in the **1,500–4,000 word** band (`style-guide.md`
-  → Length). If it's outside the band, that's not an automatic fail —
-  confirm it's a deliberate call (a piece that earned the extra room, or a
-  vignette that said what it needed to say short) rather than padding or a
-  rushed cut.
+- [ ] Word count falls in the **3,000–5,000 word** band (`style-guide.md`
+  → Length). If it's outside the band, that's not an automatic fail, but
+  it's not a silent pass either: **write the rationale into the eval
+  notes** — why this piece earned more room, or why it said everything it
+  needed to say short. A story under the floor with no rationale recorded
+  is a flag, not an exception.
+- [ ] The `<!-- story shape -->` block (`stories/CLAUDE.md`) is filled in:
+  POV, want, need, point A, point B, obstacle (external / interpersonal /
+  internal), and what the resolution costs. If any field is vague or
+  can't be answered from the actual text, the story doesn't have a clear
+  A-to-B yet — that's a flag, and it usually means `outline-checklist.md`
+  got skipped rather than run.
 
 ## 1. Style Guide Compliance (`style-guide.md`)
 
@@ -71,6 +78,15 @@ one file per decision.
   trace to something real, or is it flavor text standing in for a
   mechanism? Check against
   `story-bible/power-system/physical-consequences-and-canon.md`.
+- [ ] **Young Eli's voice** (if the story is set in Arcs 1–4, ages
+  16–21): does his in-scene interiority actually read like a teenager's —
+  cause-and-effect minded, fixated on what he already cares about, low
+  emotional vocabulary — rather than the older narrator's retrospective
+  polish leaking into the character being depicted? Check the dread-vs-
+  anxiety distinction specifically: is dread showing up where he hasn't
+  yet connected an obligation to responsibility, and anxiety where he
+  has? See `style-guide.md` (Narrative Voice) and
+  `story-bible/characters/eli-reyes-journey-worksheet.md`.
 
 ## 2. Story Laws Compliance (`story-laws.md`) — hard constraints
 
