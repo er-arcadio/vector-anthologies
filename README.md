@@ -38,11 +38,14 @@ reference/
 
 writing-guide/                  Read before writing any story
 ├── CLAUDE.md
-├── style-guide.md              Tone, voice, prose technique
-└── story-laws.md               Hard canon constraints — not preferences
+├── style-guide.md              Tone, voice, prose technique (canonical — read this)
+├── story-laws.md               Hard canon constraints — not preferences
+└── fiction-style-profile.md    Reader-preference research behind style-guide.md's prose defaults
 
 stories/                        Actual short story drafts (currently empty)
 └── CLAUDE.md                   Filing conventions, frontmatter, canon_status
+
+TODO.md                         Cross-cutting backlog (tooling/process, e.g. an eval harness)
 ```
 
 ## Notes

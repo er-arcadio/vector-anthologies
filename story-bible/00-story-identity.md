@@ -52,11 +52,15 @@ arc.
 
 **Narrative Voice & Presentation**
 
--   **Eli's retrospective narrator:** First person. An older integrated version looking back. The gap between who narrates and who is depicted IS the character arc made audible.
+(See `../writing-guide/style-guide.md` for the current, canonical version of these rules — kept here in sync, with Eli-specific examples.)
+
+-   **Eli's narrator:** First person, present tense by default. The reader moves through events as Eli experiences them rather than from a distanced, older-and-looking-back vantage.
+
+-   **Past tense, circumstantially:** used when Eli is explicitly reflecting back on something already resolved, or telling a story within the story (recounting an earlier event to someone else). When this happens, let the gap between the narrating self and the remembered self show on the page rather than explaining it — that gap is part of the character arc made audible.
+
+-   **Where NOT to retreat to past tense:** the story's most overwhelming beats stay in present-tense immediacy rather than being softened by reflective distance — the Shockwave killing, the first morning with Iris, his mother's death, the science center moment in the final fight.
 
 -   **Omniscient narrator:** Used for Vinny's interior life and home scenes. Flat, even prose --- wrong details treated as ordinary, no dramatic emphasis. Small doses of Eli's POV show how Vinny is misread. The gap between Eli's readings and the omniscient reality is the story's dramatic irony made structural.
-
--   **Present tense breaks:** During overwhelmingly alive memories the retrospective voice slips into present tense. The Shockwave killing. The first morning with Iris. His mother's death. The science center moment in the final fight.
 
 -   **Opening:** A glimpse of the Shockwave killing --- Eli alone, hands, city quiet. Then his 16th birthday. Cake. Family tension. The contrast between those two images is the entire story in two pages.
 

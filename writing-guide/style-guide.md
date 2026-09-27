@@ -21,9 +21,9 @@ Adult content, including sex scenes, is permitted where it serves character arc 
 
 ## Narrative voice
 
-- **Retrospective first person** is the default register for POV-holding protagonists: an older, integrated version of the character looking back. The gap between who is narrating and who is being depicted is itself part of the character arc — let that gap show rather than explaining it.
+- **Present tense is the default** for POV-holding protagonists. The reader moves through events as the character experiences them, not from a distanced retrospective vantage.
+- **Past tense is circumstantial, not a scheduled exception.** Use it when the narrator is explicitly reflecting back on something already resolved, or recounting/telling a story within the story (relaying an earlier event to someone else, a remembered scene framed as memory). When past tense is doing this work, let the gap between the narrating self and the remembered self show on the page rather than explaining it outright. Don't reserve tense shifts for "big" moments on a schedule — the choice should track a real in-scene reason to look back, not a checklist.
 - **Omniscient narrator**, used for antagonist interiority or scenes the protagonist isn't present for: flat, even prose. Wrong or unsettling details are treated as ordinary — no dramatic emphasis, no dread music. The horror lives in the flatness, not in the framing.
-- **Present-tense breaks**: reserve present tense for a small number of overwhelmingly alive memories per story — a death, a first morning with someone who matters, a moment the retrospective voice can't hold at a distance anymore. Overuse kills the effect; it should feel like the narrator briefly losing control of their own distance.
 
 ## The horror register — how to write the hum
 
@@ -36,7 +36,9 @@ This is the hardest instruction to get right and the easiest to overdo. Rules of
 
 ## Dialogue
 
-Sparse by design where it counts. The most important conversations in this story are often the ones that "never say what they're actually about" — subtext should be doing more work than text, especially between characters with an established emotional history. Don't over-explain a relationship in dialogue that's already been established through action.
+- **Default to sustained, uninterrupted exchanges.** Once a scene is in dialogue, stay in it — let a conversation run for a real stretch rather than cutting back to narration between nearly every line. Save a narration beat for when it's actually doing work (a physical action, a pause that changes the scene), not as a rhythmic habit between exchanges. See `fiction-style-profile.md` for the reasoning behind this default.
+- **Subtext still rules** — the most important conversations are often the ones that "never say what they're actually about." But that subtext should live in the dialogue itself (word choice, deflection, what's left unsaid) rather than being supplied by narration commentary wedged between lines.
+- Don't over-explain a relationship in dialogue that's already been established through action.
 
 ## Fight writing
 
