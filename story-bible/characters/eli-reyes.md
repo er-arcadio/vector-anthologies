@@ -22,6 +22,8 @@ related: [eli-character-arc, eli-reyes-journey-worksheet]
 
 -   **Hero name:** "Vector" --- from his own physics notes. A vector has both magnitude and direction: force with purpose. Begins circulating publicly in Arc 2.
 
+-   **How the world reads him — the angel/devil split:** Visually and thematically, Vector is coded like an angel or a god walking among people — see `../suit-evolution.md` for the palette (white/tan/gold, deliberately humble and thrifted-looking rather than pristine). Vinny is his opposite number: black with hints of red, invincible-reading via his healing, coded as a devil or fallen angel (see `vinny-black.md`). Some religious and religious-adjacent people in-world take this literally and read Vector as the devil, a monster, a vigilante with no right to judge anyone — a real, standing public perception, not a one-off insult. He never kills an unpowered person over this, whatever they believe or say about him: they aren't doing anything a body count or a court could point to, and killing someone for what they believe about him would only prove them right (see `../../writing-guide/story-laws.md`).
+
 **Eli's Romantic Arc**
 
 -   **Jade (Korean-American):** First hookup. College party, Arc 3. Party girl who moves through the world without leaving much of herself behind. Eli misreads the energy --- he's never done this before. One moment of genuine connection: she laughs at something he says, really laughs, four seconds of actual contact. He holds onto it longer than he should. Sees her with someone else at a later party. Grabs another girl who was hitting on him out of spite. Builds the first brick of the wall without knowing it.

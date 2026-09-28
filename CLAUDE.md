@@ -40,6 +40,6 @@ The *Vector* villain formerly called "Blink" is now **Twitch** (`story-bible/vil
 
 ## Status flags worth knowing about
 
-Files with unresolved development needs carry a `status:` line in their frontmatter. As of this writing: `story-bible/characters/iris.md`, `story-bible/plot-outline/arc-08.md`, `story-bible/plot-outline/era-1-overview.md` (draft, pending author agreement — see its "Open Gaps" section), and `reference/superhero-reference-book/05-vampire-doctor.md` and `06-blink.md`. `story-bible/action-items-v5.1.md` doesn't carry a `status:` field itself but *is* the active priority queue — check it for the current priority order before assuming a thread is settled.
+Files with unresolved development needs carry a `status:` line in their frontmatter. As of this writing: `story-bible/characters/iris.md`, `story-bible/plot-outline/arc-08.md`, `story-bible/plot-outline/era-1-overview.md` (draft, pending author agreement — see its "Open Gaps" section), `story-bible/suit-evolution.md` (color-arc concept settled, exact arc-by-arc transitions open), and `reference/superhero-reference-book/05-vampire-doctor.md` and `06-blink.md`. `story-bible/action-items-v5.1.md` doesn't carry a `status:` field itself but *is* the active priority queue — check it for the current priority order before assuming a thread is settled.
 
 `stories/vector/arc-05/the-name-first.md` is currently `eval_status: flagged` / `canon_status: draft` — written before the current style-guide and length standards, not yet approved, pending revision once the Era 1 outline above is agreed.

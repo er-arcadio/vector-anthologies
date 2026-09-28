@@ -79,5 +79,5 @@ This repo publishes itself as a GitHub Pages site: a Reddit/Twitter/Tumblr-inspi
 
 - **Naming:** the *Vector* villain formerly called "Blink" (super speed, Arcs 3–4) has been renamed **Twitch** to avoid collision with the separate reference-roster hero **Blink** (teleportation, hummingbird totem — not yet part of the main story).
 - **Frontmatter:** every file has YAML frontmatter (`title`, `tags`, and where relevant `status`/`related`) for quick lookup and filtering.
-- **Status flags:** files with an open development need carry a `status:` line — currently `characters/iris.md`, `plot-outline/arc-08.md`, `plot-outline/era-1-overview.md` (draft, pending author agreement), and `reference/superhero-reference-book/05-vampire-doctor.md` and `06-blink.md`.
+- **Status flags:** files with an open development need carry a `status:` line — currently `characters/iris.md`, `plot-outline/arc-08.md`, `plot-outline/era-1-overview.md` (draft, pending author agreement), `suit-evolution.md` (color-arc concept settled, exact arc transitions open), and `reference/superhero-reference-book/05-vampire-doctor.md` and `06-blink.md`.
 - **Source:** migrated from *Vector Story Bible v5.1* and *Superhero Reference Book*. Treat this repo as the source of truth going forward; update files directly rather than the original docs.
