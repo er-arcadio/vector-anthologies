@@ -50,7 +50,7 @@ Resolution and its cost:
 
 ## The "story shape" block is required
 
-Every story needs a protagonist moving from a starting point to a changed one, a want, and a real obstacle — not just a mood or an image. Fill in the `<!-- story shape -->` block above from the `character-journey-worksheet.md` / `outline-checklist.md` pass you already ran before drafting (see "Before writing a story here"). This makes the want/need/obstacle/resolution visible and reviewable instead of something the outline stage privately assumed and the reader has to reverse-engineer. Keep it in the file — it's cheap context for the next person (or agent) who touches this story, and it's the first thing `eval-checklist.md` checks.
+Every story needs a protagonist moving from a starting point to a changed one, a want, and a real obstacle — not just a mood or an image. Point A and Point B are concrete states (a situation or condition, stated as a real before-and-after — e.g. "guarded, hiding the power" → "told his mother, first taste of trusting someone with it"), not a pair of abstract lessons or themes. Fill in the `<!-- story shape -->` block above from the `character-journey-worksheet.md` / `outline-checklist.md` pass you already ran before drafting (see "Before writing a story here"). This makes the want/need/obstacle/resolution visible and reviewable instead of something the outline stage privately assumed and the reader has to reverse-engineer. Keep it in the file — it's cheap context for the next person (or agent) who touches this story, and it's the first thing `eval-checklist.md` checks.
 
 ## `canon_status` matters
 
