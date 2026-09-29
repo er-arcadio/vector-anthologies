@@ -140,7 +140,20 @@ one file per decision.
   story establishes. A canon story that hasn't been folded back is a
   silent fork waiting to contradict something later.
 
-## 4. Final Call
+## 4. Board of Advisors
+
+- [ ] Convened the board (`.claude/agents/board-of-advisors.md`) and have its
+  report ready to present *with* the draft, not instead of it. This is a
+  perspective check, not a second style gate: a panel of readers with
+  different lenses (emotional truth, Jersey City and Latino-family
+  authenticity, teen voice, how the women are written, how belief is
+  rendered, masculinity and the father wound, medical accuracy, structure)
+  flagging what they'd notice.
+- [ ] Nothing from the board has been acted on unilaterally. Its flags are
+  information for the author, not corrections to apply — record any that
+  were adopted in the eval notes, along with any consciously declined.
+
+## 5. Final Call
 
 - [ ] Set `eval_status` in the story's frontmatter: `passed` (clean, or
   only Section 0/1 flags left as accepted exceptions), `flagged`

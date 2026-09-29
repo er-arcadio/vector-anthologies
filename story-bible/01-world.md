@@ -23,7 +23,9 @@ choices.
 
 **The Accident --- Liberty Science Center**
 
--   **Setup:** 24 eighth-grade students. Advanced genetic and particle science exhibit. Splits into two groups of 12.
+*Timing note: the accident is now its own arc (`plot-outline/arc-00.md`), roughly five years before anyone manifests anything. Eli is 11 and in 6th grade here; he doesn't develop powers until Arc 1, at 16.*
+
+-   **Setup:** 24 sixth-grade students. Advanced genetic and particle science exhibit. Splits into two groups of 12.
 
 -   **Group 1:** Enter first. No incident. No exposure. No powers. One scheduling decision separates them from everything.
 
@@ -35,6 +37,8 @@ later revealed in Arc 6 to be Eli's physics teacher --- propped a door
 open briefly. A student bumped a display barrier. That was enough.
 
 -   **Aftermath:** Exhibit shuts down quietly. Boss protects institution. A year later facilitators and the chaperone die from exposure-related illness. Nobody connects it. No paper trail.
+
+-   **The delay:** nothing manifests for years, and the onset is staggered per person rather than simultaneous — Brick years early, Eli late (age 16), others in between. The mechanism behind that variance isn't settled yet; see `plot-outline/arc-00.md`, "Open questions this split created."
 
 -   **Arc 6 revelation:** Eli pieces this together during his origin investigation. National reckoning. The physics teacher's name appears in the paper trail.
 
@@ -61,7 +65,9 @@ reveal. That thread remains live into later arcs.
 
 **Society's Response --- Arc by Arc**
 
--   **Arc 1 (Age 16):** First incident. Media speculates. Government flat-footed. Eli conceals everything.
+-   **Arc 0 (Age 11):** Nothing. No incident is ever reported, no story runs, no agency opens a file. The exhibit closes for unrelated-sounding reasons. Society's response to the origin event is silence, and that silence is why there's no infrastructure five years later when it matters.
+
+-   **Arc 1 (Age 16):** First incident --- Brick's escalation, which the city cannot contain and cannot ignore. Media speculates. Government flat-footed at every level. Public panic is the arc's clock. Eli conceals everything.
 
 -   **Arc 2 (Age 17.5-18):** Multiple supers visible. Divided public. Congressional hearings, no framework. Inadequate containment facility established.
 

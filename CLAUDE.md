@@ -22,7 +22,8 @@ Development and canon repo for the *Vector* series (primary story) and a seconda
 
 ## After writing a draft
 
-Run it against `writing-guide/eval-checklist.md` before treating it as done, and record the result in the story's `eval_status` frontmatter (see `stories/CLAUDE.md`).
+1. Run it against `writing-guide/eval-checklist.md` before treating it as done, and record the result in the story's `eval_status` frontmatter (see `stories/CLAUDE.md`).
+2. **Convene the board of advisors** (`.claude/agents/board-of-advisors.md`) and present its read *alongside* the draft whenever handing a draft to the author for review. The board flags — it doesn't correct or gatekeep. Its purpose is to surface what a diverse room of readers would notice that the author might not, so he's choosing deliberately rather than by default. Never act on its flags unilaterally; the author decides what to take.
 
 ## Folder map
 

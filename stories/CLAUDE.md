@@ -58,7 +58,7 @@ Not every short story needs to be treated as binding canon. Mark clearly whether
 
 ## `eval_status` and the eval checklist
 
-Before a story counts as done, run it against `../writing-guide/eval-checklist.md` — length, style-guide compliance, story-laws compliance, and a check against `../story-bible/foreshadowing-map.md` and `../story-bible/plot-twist-inventory.md`. Record the result in `eval_status`. A flagged story can still be filed as `canon_status: draft`, but shouldn't move to `canon_status: canon` (i.e. get folded back into `story-bible/`) with an open flag on a canon-facing check. If anything's flagged, add a short `<!-- eval notes -->` comment at the bottom of the story file itself — see the checklist for what to record.
+Before a story counts as done, run it against `../writing-guide/eval-checklist.md` — length, story shape, style-guide compliance, story-laws compliance, a check against `../story-bible/foreshadowing-map.md` and `../story-bible/plot-twist-inventory.md`, and a board-of-advisors pass (`../.claude/agents/board-of-advisors.md`, presented with the draft rather than acted on). Record the result in `eval_status`. A flagged story can still be filed as `canon_status: draft`, but shouldn't move to `canon_status: canon` (i.e. get folded back into `story-bible/`) with an open flag on a canon-facing check. If anything's flagged, add a short `<!-- eval notes -->` comment at the bottom of the story file itself — see the checklist for what to record.
 
 ## `date` is required
 

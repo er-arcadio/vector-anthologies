@@ -25,9 +25,10 @@ story-bible/                    Eli/Vector's story — the primary series (canon
 │   └── CLAUDE.md
 ├── eli-character-arc.md        Five-phase character arc
 ├── suit-evolution.md
-├── plot-outline/               One file per arc (opening + arcs 1–9)
+├── plot-outline/               One file per arc (opening + arcs 0–9)
 │   ├── CLAUDE.md
-│   └── era-1-overview.md       Starting point / want / obstacle / resolution per arc, Arcs 1–7 (draft, pending author agreement)
+│   ├── arc-00.md               The field trip / the accident, age 11 — nobody manifests anything yet
+│   └── era-1-overview.md       Per-story slate for Arcs 0–7: main character, main problem, obstacles, resolution (draft, pending author agreement)
 ├── foreshadowing-map.md
 ├── plot-twist-inventory.md
 ├── open-questions.md           Original unresolved decisions
@@ -62,6 +63,9 @@ stories/                        Actual short story drafts
 scripts/                        Tooling for the repo itself (not story content)
 ├── build_site.py               Static site generator for the GitHub Pages reading site
 └── requirements.txt
+
+.claude/agents/                 Review agents for this project
+└── board-of-advisors.md        Diverse advisory panel that flags (never corrects) a finished draft
 
 .github/workflows/pages.yml     Rebuilds and deploys the reading site on every push to main
 

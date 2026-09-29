@@ -8,4 +8,4 @@ Cross-cutting backlog for tooling and process work — not narrative development
 
 ## Open
 
-(nothing currently — add here as new tooling/process needs come up)
+- **Overlay the hero's journey framework onto the character arcs.** Map the standard stages (call, refusal, mentor, threshold, trials, abyss, transformation, return) onto Eli's journey across Arcs 0–9, onto Vinny's parallel journey as its inversion, and — once she has a want (`story-bible/characters/iris.md`) — potentially onto Iris's. Arc 1 already has an explicit refusal-of-the-call and a mentor turn (his mother), so the framework is partly latent in the material; the task is to check the whole span for stages that are missing, out of order, or accidentally doubled, rather than to force the structure where it doesn't fit. Probably lives as a new file in `writing-guide/` or alongside `story-bible/eli-character-arc.md`.

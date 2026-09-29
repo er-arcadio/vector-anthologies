@@ -19,7 +19,7 @@ arc noted. The test: inevitable in retrospect, surprising in the moment.
                                                         Arc 5 earthquake
                                                         rescue.
 
-  Ouroboros ring    Arc 1 (field trip All arcs          No one around.
+  Ouroboros ring    Arc 0 (field trip All arcs          No one around.
   found outside     day)                                Just there. The
   science center                                        omniscient
                                                         narrator does not
@@ -90,7 +90,7 @@ arc noted. The test: inevitable in retrospect, surprising in the moment.
   ceiling stated as                   ceiling, all arcs that becomes the
   rule                                                  moral spine.
 
-  Group 1 / Group 2 Arc 1             Arc 6, all        One scheduling
+  Group 1 / Group 2 Arc 0             Arc 6, all        One scheduling
   split                               villain arcs      decision. Iris,
                                                         the reporter, and
                                                         every villain
@@ -135,7 +135,7 @@ arc noted. The test: inevitable in retrospect, surprising in the moment.
                                                         this framework
                                                         since Arc 2.
 
-  Physics teacher   Arc 1 (invisible) Arc 6             He propped the
+  Physics teacher   Arc 0 (invisible) Arc 6             He propped the
   in the paper                                          door open. His
   trail                                                 choice to teach
                                                         was what he did
@@ -160,7 +160,7 @@ arc noted. The test: inevitable in retrospect, surprising in the moment.
                                                         victory, not
                                                         defeat.
 
-  Reporter is Group Arc 1 (invisible) Arc 6             They weren't
+  Reporter is Group Arc 0 (invisible) Arc 6             They weren't
   1                                                     closing in on Eli.
                                                         They were trying
                                                         to understand the

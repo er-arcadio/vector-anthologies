@@ -39,7 +39,7 @@ surprising in the moment.
                                                             absorbing them,
                                                             not deflecting.
 
-  The physics       Mentor                1 (invisible) → 6 He propped the
+  The physics       Mentor                0 (invisible) → 6 He propped the
   teacher is in the recontextualization                     door open. One
   paper trail                                               link in the
                                                             butterfly effect
@@ -64,7 +64,7 @@ surprising in the moment.
                                                             Not even the good
                                                             thing.
 
-  The reporter is   Origin collapse       1 (invisible) → 6 Same field trip.
+  The reporter is   Origin collapse       0 (invisible) → 6 Same field trip.
   Group 1                                                   Different door.
                                                             Their journalism
                                                             was always
@@ -87,7 +87,7 @@ surprising in the moment.
                                                             himself from
                                                             seeing his son.
 
-  The Ouroboros     Atmospheric dread     1 (implication    Never confirmed.
+  The Ouroboros     Atmospheric dread     0 (implication    Never confirmed.
   ring was placed                         only)             One flat sentence.
                                                             The reader
                                                             decides. The story
