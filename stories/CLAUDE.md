@@ -60,6 +60,12 @@ Not every short story needs to be treated as binding canon. Mark clearly whether
 
 Before a story counts as done, run it against `../writing-guide/eval-checklist.md` — length, story shape, style-guide compliance, story-laws compliance, a check against `../story-bible/foreshadowing-map.md` and `../story-bible/plot-twist-inventory.md`, and a board-of-advisors pass (`../.claude/agents/board-of-advisors.md`, presented with the draft rather than acted on). Record the result in `eval_status`. A flagged story can still be filed as `canon_status: draft`, but shouldn't move to `canon_status: canon` (i.e. get folded back into `story-bible/`) with an open flag on a canon-facing check. If anything's flagged, add a short `<!-- eval notes -->` comment at the bottom of the story file itself — see the checklist for what to record.
 
+## Board reviews live next to the story
+
+A board-of-advisors report is saved as a sidecar beside the story it reviews: `<story-slug>.board-review.md` (e.g. `vector/arc-05/the-name-first.board-review.md`). That keeps the review versioned with the draft it's about and readable on GitHub without digging through chat history.
+
+`scripts/build_site.py` skips any file ending in `-review.md`, so sidecars never publish to the reading site. Canon and consistency errors the board catches get copied into the story's own `<!-- eval notes -->` (those are objective fixes); craft, structure, and perspective flags stay in the sidecar only, because those are the author's call and shouldn't read as a to-do list.
+
 ## `date` is required
 
 `date` is the real-world date the story was written (not in-story chronology — that's what the arc/character folder already encodes), in plain `YYYY-MM-DD` form. It drives the reading site's timeline (see below) — a story without one still publishes, but sorts to the bottom and shows "Date unknown" instead of a real date.

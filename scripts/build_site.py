@@ -126,6 +126,10 @@ def collect_stories(stories_root: Path):
     for path in sorted(stories_root.rglob("*.md")):
         if path.name.upper() == "CLAUDE.MD":
             continue
+        # Sidecar files that live next to a story but are not stories:
+        # <story-slug>.board-review.md, and anything else *.<kind>-review.md
+        if path.name.lower().endswith("-review.md"):
+            continue
         story = parse_story_file(path, stories_root)
         if story:
             stories.append(story)

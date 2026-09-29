@@ -1,7 +1,7 @@
 ---
 title: "Iris"
 tags: [character, love-interest, iris]
-status: needs-expansion — see action-items-v5.1.md
+status: want/need settled; still needs her Arcs 3–5 offscreen activity and one independent scene per arc from Arc 6 — see action-items-v5.1.md
 ---
 
 # Iris
@@ -18,18 +18,18 @@ status: needs-expansion — see action-items-v5.1.md
 
 -   **The time conversation (Arc 7):** In a casual conversation she describes how she perceives time. The door it opens in his understanding of what he's always been doing when he freezes motion is the last piece of his Arc 7 breakthrough. Not earned through study. Through intimacy. Through actually listening.
 
-## Her own want — five candidates, pending a decision
+## Her want and her need — settled
 
-Everything above is her relationship to *Eli*. `action-items-v5.1.md` item 1 is the gap: she needs a throughline that exists without him. Five options, each built from something already in her file rather than bolted on. **None of these is chosen yet.**
+-   **Conscious want: purpose and connection.** She is actively, knowingly looking for both. Not drifting — searching. She wants something of her own that matters, and she wants to be genuinely known by someone. She would say this out loud if asked.
 
-**1. She wants to know why she was spared.** She was one scheduling decision from the room. That near-miss left her with a life that feels borrowed — not survivor's guilt exactly, more the sense that her ordinary life is an accident she didn't earn. This is *why* she'd been watching Vector's story from the outside for years before they met: she's been trying to see the version of her life that almost happened. Strongest at explaining her existing behavior with no retrofitting.
+-   **Unconscious need: to give back to humanity.** What actually fulfills her isn't finding a purpose *for herself* — it's being of use to other people. She doesn't know this about herself for most of the story; she experiences the lack as restlessness, or as a job that looks right on paper and doesn't satisfy. The arc is her discovering that the fulfillment she's been hunting comes from contribution rather than from acquisition of a purpose.
 
-**2. She wants out from under being the steady one.** Raised by a steady single father, she became his mirror — reliable, private, the one who notices and doesn't burden anyone. Her want is to stop being that: to want something loudly for once. (Optional sharpening: her father is aging or ill, and Colombia is partly where she goes to *not* deal with it — giving her a private grief that runs parallel to Eli's without copying it.)
+-   **The gap between them:** she keeps looking for purpose as a *thing to have* (a project, a vocation, a role, eventually a relationship) when what she needs is a way to *serve*. Every version of purpose she acquires works for a while and then goes hollow — which is the same structural failure Eli has with power, arrived at from the opposite direction. Neither of them can tell, for most of the story, that they're making the same mistake.
 
-**3. She wants to make something of her own about the accident.** Give her a vocation built on seeing people accurately — documentarian, oral historian, translator, nurse — and a project: the real account of what happened to those 24 kids. This puts her in direct structural friction with Eli's need for concealment, and connects her to the reporter (also Group 1, also on that list, also doing personal investigation in professional clothes). Best option for generating independent scenes and plot.
+-   **Authorship, underneath the want.** Everything determinative in her life was decided by someone else: the scheduling decision that spared her, her father's steadiness that shaped her, Vector's fame landing in her lap. Her withholding — knowing Eli's identity and not telling him — is the one lever she fully controls, and it should read as a *choice she is making* rather than a plot device. This is why she can keep it for as long as she does.
 
-**4. She wants authorship over her own life.** Everything determinative in her life was decided by other people: the scheduling decision, her father's temperament, Vector's fame landing in her lap. Her want is to be the one who chooses. This recontextualizes her existing secret — not telling Eli she knew is the one lever she has, the only thing in the whole situation she controls. Most elegant at converting an existing plot device into character.
+-   **Her external goal: a real work of her own about the accident.** Give her a vocation built on seeing people accurately, and a project — the true account of what happened to those 24 kids. This is where want and need first overlap without her noticing: she starts it because she needs a purpose, and it turns out to matter because it serves the people it's about. It also puts her in direct structural friction with Eli's need for concealment, and connects her to the reporter (also Group 1, also on that list, also doing personal investigation in professional clothes). **[GAP]** the specific vocation — documentarian, oral historian, translator, nurse — is still open; pick it when a story needs it.
 
-**5. She wants to stop watching and start being in it.** Canon already says she notices everything and rarely volunteers what she sees. Her want is to be a participant rather than a witness; the retreat is where she practices presence. Makes her Eli's *mirror* rather than his opposite — both people who manage life instead of inhabiting it, arriving at the same lesson from opposite directions.
+-   **Why she'd been watching Vector for years before they met:** she was one scheduling decision from the room, and she has been trying to see the version of her life that almost happened. This is backstory serving the want, not a want of its own.
 
-**Recommendation:** **4 as her internal want, 3 as her external goal.** Four gives her secret a motive and makes her withholding a character choice instead of a plot mechanism; three gives her somewhere to go, something to do in Arcs 3–5 while she's currently offscreen, an independent scene per arc from Arc 6 on, and a live source of friction with Eli that isn't romantic. Option 1 folds neatly underneath either as backstory. Options 2 and 5 are the most thematically resonant but the least generative of actual plot.
+-   **What this unlocks:** her Arcs 3–5 offscreen activity is now answerable (she's building the project, and it isn't going well in the way that matters), and an independent scene per arc from Arc 6 has something to be *about* that isn't Eli.

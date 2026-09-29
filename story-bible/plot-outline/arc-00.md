@@ -44,11 +44,11 @@ status: new — split out of the original Arc 1; ripple effects across the bible
 
 -   A year later, the facilitators and the chaperone die of exposure-related illness. Nobody connects it to anything.
 
--   **Then nothing happens for years.** This is the load-bearing structural fact of the split: the accident does not pay out on a schedule. Powers arrive on different timelines per person — Brick early, Eli late (Arc 1, age 16), others in between.
+-   **Then nothing happens for years.** This is the load-bearing structural fact of the split: the accident does not pay out on a schedule. Powers arrive on staggered individual timelines — Brick within months, Eli four and a half years later, the tier-broken powers last of all. The rule governing this and the full onset table are in `../power-system/onset-timeline.md`.
 
 ## Open questions this split created
 
--   **Why the delay, and why does it vary?** Working hypothesis, not yet canon: onset tracks individual developmental/hormonal maturation rather than a fixed clock — which is why Brick, an early developer who was already the biggest kid in the room, shows up years before Eli does. Needs an explicit decision before a story leans on it, because it's a power-system rule, not flavor.
+-   **Why the delay, and why does it vary? — SETTLED.** Onset latency scales with the power's *ceiling*, not its magnitude: low-ceiling powers arrive within months, tier-broken powers take years. Brick's strength has no fundamental convergence at all (structural cap), so he arrives in months; Eli's telekinesis and Maya's telepathy are tier-broken, so they take four to five and a half years. Full rule and the per-person onset table: `../power-system/onset-timeline.md`.
 
 -   **Brick's relationship to the accident.** `../../writing-guide/story-laws.md` fixes the villain roster to Group 2 classmates "with the exception of Brick," but `../villains/brick.md` says the accident "gave his existing character a tool." Those two readings conflict. Either (a) Brick is a Group 2 kid whose powers came early, or (b) Brick is unconnected to the accident entirely and his strength has another source. The new "late for Eli but not for Brick" note leans toward (a). Needs a decision — see `brick.md`.
 

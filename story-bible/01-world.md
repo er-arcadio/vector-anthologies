@@ -38,7 +38,9 @@ open briefly. A student bumped a display barrier. That was enough.
 
 -   **Aftermath:** Exhibit shuts down quietly. Boss protects institution. A year later facilitators and the chaperone die from exposure-related illness. Nobody connects it. No paper trail.
 
--   **The delay:** nothing manifests for years, and the onset is staggered per person rather than simultaneous — Brick years early, Eli late (age 16), others in between. The mechanism behind that variance isn't settled yet; see `plot-outline/arc-00.md`, "Open questions this split created."
+-   **The delay:** nothing manifests for years, and onset is staggered per person rather than simultaneous. **Latency scales with the power's ceiling** — low-ceiling powers (strength, flight, sound) arrive within months, tier-broken ones (telekinesis, telepathy) take four to five and a half years. Brick arrives in months; Eli, at 16, is nearly last. See `power-system/onset-timeline.md` for the rule and the full per-person table.
+
+-   **Why society got it wrong:** the only powers visible for the first few years were the low-ceiling ones. The world calibrated its assumptions, its panic, and its (absent) policy on those — and was then blindsided when the tier-broken powers landed. This is a large part of why there's still no framework by Arc 2.
 
 -   **Arc 6 revelation:** Eli pieces this together during his origin investigation. National reckoning. The physics teacher's name appears in the paper trail.
 

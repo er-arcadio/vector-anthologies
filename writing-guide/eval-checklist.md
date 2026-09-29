@@ -152,6 +152,11 @@ one file per decision.
 - [ ] Nothing from the board has been acted on unilaterally. Its flags are
   information for the author, not corrections to apply — record any that
   were adopted in the eval notes, along with any consciously declined.
+- [ ] The report is saved as a sidecar next to the story
+  (`<story-slug>.board-review.md` — see `../stories/CLAUDE.md`) so the author
+  can actually read and keep it. Any **canon or consistency errors** the
+  board caught get copied into the story's own `<!-- eval notes -->`, since
+  those are objective; craft and perspective flags stay in the sidecar.
 
 ## 5. Final Call
 

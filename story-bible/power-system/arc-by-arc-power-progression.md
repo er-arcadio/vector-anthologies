@@ -5,7 +5,7 @@ tags: [powers, progression, arc-reference]
 
 # Arc-by-Arc Power Progression
 
--   **Arc 0 (Age 11):** None. The accident happens and nothing manifests — for Eli or, visibly, for anyone. Onset is staggered per person across the following years (Brick early, Eli late); the mechanism behind that variance isn't settled, see `../plot-outline/arc-00.md`.
+-   **Arc 0 (Age 11):** None. The accident happens and nothing manifests — for Eli or, visibly, for anyone. Onset is staggered across the following years, with latency scaling to each power's ceiling; Brick arrives within months, Eli four and a half years later. See `onset-timeline.md` for the rule and the per-person table.
 
 -   **Arc 1 (Age 16):** Stage 1 only. Push/pull, short lifts, crude flight, crude shields, environmental disruption. Everything costs him *during* use (see `physical-consequences-and-canon.md`) — nothing is smooth this arc.
 

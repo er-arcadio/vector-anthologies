@@ -18,7 +18,7 @@ at a time, in order, before moving to the next.*
 
 **1. Iris --- Independent Narrative Weight**
 
--   **Define her own want:** a goal or throughline that exists apart from Eli --- career, unresolved thread with her father, her own reason for being at the Colombia retreat beyond "known getaway."
+-   **Define her own want:** ~~a goal or throughline that exists apart from Eli~~ **DONE** --- conscious want is purpose and connection; unconscious need is to give back to humanity; external goal is a real work of her own about the accident and the 24 kids. See `characters/iris.md`. Still open within this: her specific vocation.
 
 -   **Fill the offscreen gap:** decide what she is doing in Arcs 3--5, before Colombia, when she is currently absent or purely reactive.
 

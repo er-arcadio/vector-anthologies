@@ -89,7 +89,7 @@ Nobody manifests anything. The horror is entirely retroactive.
 - **Obstacles:**
   - Neither of them knows anything happened, and won't for over a decade.
   - There is no drama in being spared. The story has to make *absence* land.
-- **Resolution:** They go first, see the exhibit, and leave unchanged. The list of who was in which room gets filed and forgotten until Arc 6. **[GAP]** — how much on-page presence Iris gets here depends entirely on what her independent want turns out to be.
+- **Resolution:** They go first, see the exhibit, and leave unchanged. The list of who was in which room gets filed and forgotten until Arc 6. For Iris this is the origin of the thing she'll spend her adult life circling: her life was decided for her by somebody else's scheduling, and she'll eventually build a whole project out of trying to see the version that almost happened (`../characters/iris.md`).
 
 ### "The Door"
 
@@ -414,7 +414,8 @@ The arc where he says no first. Life is already chaotic for a sophomore; the pow
   - He cannot perform for Iris, which removes the only social strategy he has.
   - Something true escapes before he can file it away.
   - She already knew who he was before they met, and didn't say.
-- **Resolution:** He stays — and staying, not the running, is the arc's real turn toward the need instead of the want. The relationship moves hookup → friendship → something real. When she tells him she knew, he cannot be angry, and the irony is exact: the first person he was fully honest with was slightly less than honest with him. What it gives him outweighs what it costs — someone who saw him, knew, and stayed. Until Iris that had only ever been true of his mother. **[GAP]** Iris's own want, which this story cannot carry without.
+- **Resolution:** He stays — and staying, not the running, is the arc's real turn toward the need instead of the want. The relationship moves hookup → friendship → something real. When she tells him she knew, he cannot be angry, and the irony is exact: the first person he was fully honest with was slightly less than honest with him. What it gives him outweighs what it costs — someone who saw him, knew, and stayed. Until Iris that had only ever been true of his mother.
+- **Iris's side of this story, now that she has a want:** she came to the retreat looking for purpose and connection (her conscious want) and is quietly failing at both — the project about the 24 kids is stalling, and she can't tell whether it matters. Then the subject of it walks in. Her withholding is a choice, not a device: knowing who he is, is the one thing in the situation she controls. What she doesn't know yet is that what she actually needs is to be *of use*, not to find a purpose — which is the same mistake Eli makes about power, from the opposite direction.
 
 ---
 
@@ -466,9 +467,9 @@ The arc where he says no first. Life is already chaotic for a sophomore; the pow
 
 Collected from above. Distinct from `../open-questions.md` and `../action-items-v5.1.md`, which remain the canonical backlogs — these are the ones most likely to block writing a specific story.
 
-1. **Iris's independent want.** Still the biggest gap; blocks "One Scheduling Decision" and "Colombia" outright. Five candidate options are drafted in `../characters/iris.md` for a decision.
-2. **Brick's relationship to the accident** — Group 2 kid with early onset, or unconnected entirely? `story-laws.md` and `villains/brick.md` currently imply different answers. See `villains/brick.md`.
-3. **Why onset is delayed and staggered** (Brick years early, Eli at 16). A power-system rule, not flavor — working hypothesis in `arc-00.md`, needs confirming before a story leans on it.
+1. ~~**Iris's independent want.**~~ **SETTLED** — conscious want is purpose and connection, unconscious need is to give back to humanity, external goal is a real work of her own about the 24 kids. See `../characters/iris.md`. Still open inside it: her specific vocation.
+2. **Brick's relationship to the accident** — Group 2 kid with earliest onset, or unconnected entirely? `../power-system/onset-timeline.md` measures his onset from the accident, which leans toward the former and would make "except Brick" in `story-laws.md` mean *exception to the origin logic* rather than unexposed. Needs explicit confirmation.
+3. ~~**Why onset is delayed and staggered.**~~ **SETTLED** — latency scales with the power's ceiling, not its magnitude. Rule and full per-person onset table in `../power-system/onset-timeline.md`.
 4. **"Eighteen" (Arc 2)** has no problem or resolution yet — what makes that birthday "earned rather than given."
 5. **Sol's exit line (Arc 4)** — deliberately deferred to the writing, per `../open-questions.md`. Flagged so it isn't treated as an oversight.
 6. **How the Arc 0 paper trail becomes public in "The List."** Mechanism unspecified.
