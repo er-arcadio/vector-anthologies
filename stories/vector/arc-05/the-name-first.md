@@ -124,6 +124,29 @@ era-1-overview.md is agreed. Specifically:
   (first-person Eli throughout, no omniscient passages) — no action needed
   on that front unless the rewrite adds one.
 
+CANON ERRORS this eval pass missed, caught by the board of advisors:
+- ARC-LOCK VIOLATION: "I can feel her ... the electromagnetic noise of a
+  person too scared to make a sound" is field sensing, which
+  arc-by-arc-power-progression.md places at Arc 6, not Arc 5. Must be cut or
+  replaced with an Arc 5 ability in the rewrite.
+- RESEARCH-ANCHOR VIOLATION: fear has no readable electromagnetic signature.
+  Flavor text in a slot the research-anchor rule reserves for real physics.
+- PHYSICS INCONSISTENCY: per abilities-environmental-effects.md, deconstruction
+  at that mass releases heat and an EM pulse proportional to scale. A
+  seven-foot man dissolves and nobody on the block registers anything, then
+  two officers walk up to chat.
+- INTERNAL CONTRADICTION IN THESE NOTES: the notes above claim the Arc 1
+  tremor seed was "left unstated per that entry's instruction," but the prose
+  states it outright ("I didn't know yet what six-forty was. I know now").
+  foreshadowing-map.md says never stated, available through juxtaposition.
+  One of the two has to change.
+- Clinical detail: a young man with a progressive tremor would get a referral
+  or imaging, not a stress-management pamphlet. The indictment of the system
+  is fair; the detail carrying it isn't.
+
+The board's craft flags (structural, voice, and perspective) are the author's
+call and deliberately not recorded as a fix list here.
+
 eval_status: flagged
 -->
 
