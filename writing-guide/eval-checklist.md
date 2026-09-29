@@ -32,18 +32,38 @@ one file per decision.
 
 ## 0. Length and Shape
 
-- [ ] Word count falls in the **3,000–5,000 word** band (`style-guide.md`
-  → Length). If it's outside the band, that's not an automatic fail, but
-  it's not a silent pass either: **write the rationale into the eval
-  notes** — why this piece earned more room, or why it said everything it
-  needed to say short. A story under the floor with no rationale recorded
-  is a flag, not an exception.
+First: check `story_type` in the frontmatter, because it decides which
+checks below apply (`style-guide.md` → Length).
+
+**If `story_type: arc-advancing`:**
+
+- [ ] Word count falls in the **3,000–5,000 word** band. Outside it isn't an
+  automatic fail, but it isn't a silent pass either: **write the rationale
+  into the eval notes.** A piece under the floor with no rationale recorded
+  is a flag.
+- [ ] It came in short and is now being relabelled `single-beat` — **that's a
+  flag, not a reclassification.** A piece conceived as arc-advancing that
+  landed at 1,600 words has a problem the label won't fix.
 - [ ] The `<!-- story shape -->` block (`stories/CLAUDE.md`) is filled in:
   POV, want, need, point A, point B, obstacle (external / interpersonal /
-  internal), and what the resolution costs. If any field is vague or
-  can't be answered from the actual text, the story doesn't have a clear
-  A-to-B yet — that's a flag, and it usually means `outline-checklist.md`
-  got skipped rather than run.
+  internal), and what the resolution costs. Point A and B are concrete
+  states, not abstract lessons. If any field is vague or can't be answered
+  from the actual text, the story doesn't have a clear A-to-B yet — a flag,
+  and usually a sign `outline-checklist.md` got skipped rather than run.
+
+**If `story_type: single-beat`:**
+
+- [ ] No word floor applies and no A-to-B is required — don't flag either.
+- [ ] The compression is doing real work: would this be *worse* at 3,000
+  words? If the honest answer is "no, it just stopped," it isn't a
+  single-beat piece.
+- [ ] One line recorded on the effect it's going for, in place of the full
+  story-shape block.
+
+**Either way:**
+
+- [ ] The slate is still weighted toward arc-advancing pieces overall. These
+  are meant to be the majority; a run of single-beat pieces is worth noticing.
 
 ## 1. Style Guide Compliance (`style-guide.md`)
 

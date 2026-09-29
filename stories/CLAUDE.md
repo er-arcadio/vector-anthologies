@@ -32,6 +32,7 @@ Each story file should open with light frontmatter for lookup:
 ---
 title: "Story Title"
 tags: [story, arc-X, character-name]
+story_type: arc-advancing | single-beat
 canon_status: draft | canon | non-canon
 eval_status: unreviewed | passed | flagged
 date: YYYY-MM-DD
@@ -48,9 +49,20 @@ Resolution and its cost:
 -->
 ```
 
+## `story_type` — which kind of piece this is
+
+Two forms, and every story declares one (full definitions in `../writing-guide/style-guide.md` → Length):
+
+- **`arc-advancing`** — the default. Targets 3,000–5,000 words, needs a real A-to-B with a want and an obstacle, moves the arc it sits in. **These should outnumber single-beat pieces.**
+- **`single-beat`** — no floor, typically 800–1,500 words. For beats whose power is compression and which longer treatment would ruin (Theo's death in two sentences, the diner scene, the arc where Vinny simply doesn't appear). Exempt from the A-to-B requirement, and exempt from the word floor, by definition.
+
+Switch between them freely from piece to piece. The one thing not to do is reclassify a piece as `single-beat` *after* an arc-advancing draft came in short — that's a flag, not a category change.
+
 ## The "story shape" block is required
 
-Every story needs a protagonist moving from a starting point to a changed one, a want, and a real obstacle — not just a mood or an image. Point A and Point B are concrete states (a situation or condition, stated as a real before-and-after — e.g. "guarded, hiding the power" → "told his mother, first taste of trusting someone with it"), not a pair of abstract lessons or themes. Fill in the `<!-- story shape -->` block above from the `character-journey-worksheet.md` / `outline-checklist.md` pass you already ran before drafting (see "Before writing a story here"). This makes the want/need/obstacle/resolution visible and reviewable instead of something the outline stage privately assumed and the reader has to reverse-engineer. Keep it in the file — it's cheap context for the next person (or agent) who touches this story, and it's the first thing `eval-checklist.md` checks.
+Required for `arc-advancing` stories; optional for `single-beat` pieces (where "Effect I'm going for:" is the one line worth recording instead).
+
+An arc-advancing story needs a protagonist moving from a starting point to a changed one, a want, and a real obstacle — not just a mood or an image. Point A and Point B are concrete states (a situation or condition, stated as a real before-and-after — e.g. "guarded, hiding the power" → "told his mother, first taste of trusting someone with it"), not a pair of abstract lessons or themes. Fill in the `<!-- story shape -->` block above from the `character-journey-worksheet.md` / `outline-checklist.md` pass you already ran before drafting (see "Before writing a story here"). This makes the want/need/obstacle/resolution visible and reviewable instead of something the outline stage privately assumed and the reader has to reverse-engineer. Keep it in the file — it's cheap context for the next person (or agent) who touches this story, and it's the first thing `eval-checklist.md` checks.
 
 ## `canon_status` matters
 

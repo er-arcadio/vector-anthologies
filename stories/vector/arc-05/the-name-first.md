@@ -1,6 +1,7 @@
 ---
 title: "The Name First"
 tags: [story, arc-5, eli-reyes, shockwave]
+story_type: arc-advancing
 canon_status: draft
 eval_status: flagged
 date: 2026-09-27
@@ -112,8 +113,10 @@ era-1-overview.md is agreed. Specifically:
   eli-reyes-journey-worksheet.md's Phase 3 (Fracture) row once the story is
   reworked, not before — the outline pass should happen first, not be
   reverse-engineered from the existing prose.
-- Word count (~2,000) is now under the revised 3,000-5,000 floor with no
-  rationale recorded.
+- Word count (~2,000) is under the 3,000-5,000 arc-advancing band with no
+  rationale recorded. Deliberately kept classified as arc-advancing rather
+  than relabelled single-beat: it was conceived as a full story and came in
+  short, which is exactly the case the label isn't allowed to paper over.
 - The 16-year-old Eli in the birthday section reads with more self-awareness
   and vocabulary than his canon characterization (STEM-brilliant, low EQ/
   vocabulary, cause-and-effect minded at that age) supports — needs a pass

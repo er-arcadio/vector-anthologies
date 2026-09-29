@@ -32,7 +32,7 @@ Accident: **10/2007.** Placeholder dates consistent with `../plot-outline/era-1-
 | **Danny Reeves** (the Flyer) | Flight | Low — rides super speed's ceiling, no separate convergence | 2008 | ~1 yr | Never; dies of it |
 | **Joel Mara** | Sound manipulation | Low-mid — ENERGY (vibration/pressure) | 2009 | ~2 yrs | Arc 6 |
 | **Shockwave** | Force / destruction | Mid — ENERGY | 2011 | ~3.5 yrs | Arc 2 (2013) |
-| **Vinny Black** | Self-healing | *Apparently* low — BIOLOGY, self-only lane. **See below.** | 2011 | ~3.5 yrs | Arc 2 (2014) |
+| **Vinny Black** | Self-healing (regeneration) | Low-mid — BIOLOGY, self-only lane. Evolves modestly; **never breaks.** See below. | 2011 | ~3.5 yrs | Arc 2 (2014) |
 | **Tide** (Marcus Webb) | Liquid + temperature | Mid — ENERGY, multi-domain | 2011 | ~4 yrs | Arc 3 (2016) |
 | **Simone** | Shapeshifting / elemental mimicry | Mid-high — BIOLOGY (self-only) but unusually broad | 2012 | ~4.5 yrs | Arc 4 (2018) |
 | **Eli Reyes** | Telekinesis | **BROKEN** — MATTER; subatomic control of external matter | 03/2012 | ~4.5 yrs | Arc 1 (2012) |
@@ -43,15 +43,17 @@ Accident: **10/2007.** Placeholder dates consistent with `../plot-outline/era-1-
 
 The last four cluster deliberately. Once latency passes roughly five years you're in tier-broken territory, and the exact ordering inside that cluster isn't meaningful precision — don't over-fit a story to it.
 
-## Vinny is the exception, and that's the point
+## Vinny: two separate axes, and only one of them is on this table
 
-The rule mis-tiers Vinny, and **everyone in-world makes the same mistake, including Eli.**
+**His regeneration is genuinely a low-ceiling power, and it stays that way.** The convergence guide puts regeneration in the BIOLOGY domain's *self-only lane*, explicitly separated from MATTER because these powers "only ever restructure the user's own body." It evolves somewhat across the arcs — roughly B into A on the guide's tiers — and it **never reaches BROKEN.** Under the onset rule, that low ceiling correctly predicts his early arrival, 2011, years before Eli. **No exception is needed. The rule works on him.**
 
-Self-healing scans as a low-ceiling power: the convergence guide puts regeneration in the BIOLOGY domain's *self-only lane*, explicitly separated from MATTER because "these powers, however extreme, only ever restructure the user's own body." Under the onset rule, that low ceiling correctly predicts his early arrival — 2011, years before Eli.
+He also **took it for granted.** It arrived, it was useful, and he stopped thinking about it. That's characterization, not just mechanics: the one gift he was given, he never studied — the exact inverse of Eli, whose entire ceiling is built out of study.
 
-But his healing is an **integration mechanism, not passive regeneration** (`../../writing-guide/story-laws.md`). It absorbs damage, foreign power, and dark influence, and optimizes against each. That means it does not stay in the self-only lane — and the self-only boundary is the entire reason the guide caps it low. His true ceiling isn't regeneration's; it's *whatever he has absorbed*, which by Arc 7 makes him structurally the most powerful being in the story.
+**What actually makes him the most powerful being in the story is the magic, and the magic is not a manifested power at all.** It's *learned* — the book, the cult, the forbidden techniques — which puts it outside this table's scope entirely. Magic genuinely is a broken-tier capability. For Vinny it comes at a cost, and the cost is the story: every escalation takes a piece of him, which is what the shadow moving wrong, the clocks, Theo's avoidance, and eventually "becoming a door rather than a person" are all measuring.
 
-So the in-world tiering logic fails on him for a principled reason, and it fails the same way the reader does. This is the mechanism underneath the listed twist "Vinny was always the more powerful one" (`../plot-twist-inventory.md`): his power arrived early because it looked small, and it looked small because the framework everyone uses to measure powers has a blind spot exactly the shape of him.
+**How the two axes relate:** the regeneration is the *vessel*, not the source. It absorbs damage, foreign power, and dark influence and optimizes against each (`../../writing-guide/story-laws.md`), which is precisely what lets him keep channelling magic that would destroy anyone else — the cult leader died trying to hold a fraction of what Vinny holds. So his healing doesn't become broken; it's the platform that makes an unlimited, ruinous second power *survivable* for longer than it should be.
+
+**Why this still delivers the twist.** "Vinny was always the more powerful one" (`../plot-twist-inventory.md`) doesn't depend on his healing being secretly tier-broken. It depends on everyone — Eli, the reader, the in-world framework — measuring people by the power they *manifested* and missing that Vinny went and acquired a second one on a completely different axis. Eli files him as "possibly dangerous, not a priority" in Arc 2 and he is not wrong about the regeneration. He's wrong about which axis mattered.
 
 Do not have any character state this out loud. It's available, not explained.
 

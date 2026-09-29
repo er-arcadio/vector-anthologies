@@ -10,6 +10,8 @@ status: new — split out of the original Arc 1; ripple effects across the bible
 
 **The register:** this is the omniscient narrator's home turf. Nothing wrong happens on the page. The horror is entirely retroactive; it arrives on reread. Do not foreshadow with tone. Write a school field trip.
 
+**Write this arc later, place it first.** Four stories in which nothing visibly happens is right for the story and wrong as a reader's entry point. Drafting starts at Arc 1; come back and illustrate Arc 0 once there's material for it to sit underneath.
+
 ## The trip
 
 -   24 sixth-graders. Liberty Science Center, Jersey City. An advanced genetic and particle science exhibit. The class splits into two groups of 12.

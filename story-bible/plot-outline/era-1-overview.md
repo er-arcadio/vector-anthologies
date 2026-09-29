@@ -16,6 +16,10 @@ The story slate for Era 1, broken into the individual **stories** that make up e
 
 Anything flagged **[GAP]** is genuinely undecided, not summarized — those are collected at the end.
 
+## This is a map, not a queue
+
+**Writing starts at Arc 1.** Arc 0 gets illustrated later and *placed* first — it's four stories in which nothing visibly happens, which is right for the story and wrong for a reader's entry point. Beyond that, write in whatever order you're actually excited about; the slate exists so that whichever piece you pick has its problem and obstacles already worked out, not to be completed top to bottom.
+
 ## Placeholder chronology
 
 Dates below are invented scaffolding, only meaningful *relative to each other*. Adjust freely. No real-world events of these years are implied by this continuity.
