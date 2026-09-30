@@ -21,6 +21,9 @@ from pathlib import Path
 import markdown
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import build_board  # noqa: E402  (needs sys.path set above)
+
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?\n)---\s*\n?(.*)$", re.DOTALL)
 
 SITE_TITLE = "Vector Anthologies"
@@ -403,7 +406,15 @@ footer.site-footer {
 """
 
 
+BOARD_ENABLED = False
+
+
 def page_shell(title: str, body: str, extra_head: str = "") -> str:
+    board_link = (
+        '<span style="margin-left:auto"><a href="{}board.html" '
+        'style="color:var(--accent-contrast);opacity:.85;font-size:.85rem;font-weight:600">Board</a></span>'
+        .format("" if title in (SITE_TITLE, "Editorial board") else "../")
+    ) if BOARD_ENABLED else ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -418,6 +429,7 @@ def page_shell(title: str, body: str, extra_head: str = "") -> str:
 <div class="topbar">
   <a class="brand" href="index.html">{html.escape(SITE_TITLE)}</a>
   <span class="tagline">{html.escape(SITE_TAGLINE)}</span>
+  {board_link}
 </div>
 {body}
 <footer class="site-footer">{html.escape(SITE_TITLE)} — updated automatically as new stories are added.</footer>
@@ -514,7 +526,17 @@ def build(repo_root: Path, out_dir: Path):
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "stories").mkdir(parents=True, exist_ok=True)
 
+    global BOARD_ENABLED
+    BOARD_ENABLED = build_board.build_board(repo_root, out_dir)
+
     (out_dir / "index.html").write_text(render_index(stories), encoding="utf-8")
+
+    if BOARD_ENABLED:
+        (out_dir / "board.html").write_text(
+            build_board.render_board_page(page_shell), encoding="utf-8")
+        (out_dir / "robots.txt").write_text(
+            "User-agent: *\nDisallow: /board.html\nDisallow: /board-data.json\n",
+            encoding="utf-8")
 
     for s in stories:
         page = render_story_page(s)

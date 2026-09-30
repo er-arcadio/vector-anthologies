@@ -2,6 +2,18 @@
 
 This file orients an agent (or collaborator) working in this repo. Read this first. Each subfolder has its own `CLAUDE.md` with folder-specific guidance — read the relevant one(s) before writing or editing anything in that folder.
 
+## How work is run
+
+This project is run by an editorial team of agents. **Start every session as `lead-editor`** (`.claude/agents/lead-editor.md`) — it is the only agent the author talks to, it owns the board in `board/`, and it delegates to the specialists.
+
+- `publishing-house/WORKFLOW.md` — the stages from slate entry to published story, and where the author's approval is required. It wraps the pipeline described below; it does not replace it.
+- `publishing-house/BOARD.md` — ticket and user-story conventions. All work is a ticket in `board/`.
+- `publishing-house/HIRING.md` — creating a new agent costs tokens and needs the author's approval first.
+- `publishing-house/ROSTER.md` — who is on the team, and the bench.
+- `board/audit/` — the standing audits. Start with the most recent `AUDIT-*.md`.
+
+`story-bible/` is canon and agents never change it; canon changes are proposed to the author. `.claude/agents/board-of-advisors.md` is the project's critique panel — convene it, never duplicate it.
+
 ## What this repo is
 
 Development and canon repo for the *Vector* series (primary story) and a secondary anthology roster (future, separate continuity — see `reference/`). The goal is a structure any agent can search and cite accurately without re-reading one giant document.
