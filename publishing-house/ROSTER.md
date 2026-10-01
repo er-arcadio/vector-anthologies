@@ -5,8 +5,8 @@
 |-------|----------------------|-------|----------|
 | lead-editor | Editorial director | opus | Founding |
 | story-bible-keeper | Continuity editor / archivist | sonnet | Founding |
-| development-editor | Developmental / structural editor | opus | Founding |
-| drafting-author | Staff writer / ghostwriter | opus | Founding — **pending author's answer on who writes prose** |
+| development-editor | Developmental / structural editor | opus | Founding — supports the author's outline, does not author it |
+| drafting-author | Staff writer / ghostwriter | opus | Confirmed 2026-09-30 — the author outlines, this agent drafts the prose |
 | line-editor | Line editor (advisory) | sonnet | Founding |
 | copy-proofreader | Copyeditor / proofreader | haiku | Founding |
 | production-formatter | Production editor | haiku | Founding |

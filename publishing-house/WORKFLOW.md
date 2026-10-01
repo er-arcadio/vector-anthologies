@@ -11,7 +11,7 @@ The author owns **ideas, structure, and final approval**. The Lead Editor runs e
 | 0 | Audit and roadmap | lead-editor + specialists | `board/audit/`, roadmap | **G1** Author approves the roadmap |
 | 1 | Slate agreement | development-editor | An arc's slate entries filled to drafting-ready shape | **G2** Author agrees the slate |
 | 2 | Continuity pre-check | story-bible-keeper | Conflicts and gaps for this story | (feeds G3) |
-| 3 | Worksheet + outline | development-editor | Filled `character-journey-worksheet`, outline passing `outline-checklist.md`, complete story-shape block | **G3** Author approves outline and details |
+| 3 | Worksheet + outline | **author**, supported by development-editor | Author's outline, pressure-tested against `outline-checklist.md`, with the story-shape block complete | **G3** Author confirms the outline is ready to draft |
 | 4 | Draft | drafting-author | Draft in `stories/...` with full frontmatter | (internal) |
 | 5 | Eval | anyone **except** the drafter | `eval-checklist.md` run, `eval_status` recorded | (internal) |
 | 6 | Board of advisors | board-of-advisors | `<slug>.board-review.md` sidecar | (internal) |
@@ -20,6 +20,17 @@ The author owns **ideas, structure, and final approval**. The Lead Editor runs e
 | 9 | Copy and proof | copy-proofreader | Corrections + queries | **G5** Author approves final text |
 | 10 | Canon fold-back | story-bible-keeper | Canon Change Proposal for anything the story locks in | **G6** Author approves canon changes |
 | 11 | Publish | author (production-formatter prepares) | Push to `main`; Pages redeploys | **G7** Author pushes |
+
+## Who writes what (settled 2026-09-30, T-004)
+The **author decides what happens and writes the outline**. `drafting-author` writes the **prose** from that outline. The author **approves** the finished story.
+
+So the outline is the load-bearing artefact in this project, and `development-editor` does not author it. Its job at stage 3 is to take the author's outline and:
+- run it through `writing-guide/outline-checklist.md` and report what fails,
+- fill in or query the story-shape fields `stories/CLAUDE.md` requires (want, need, Point A, Point B, obstacle type, cost, `story_type`),
+- flag canon it depends on that does not exist yet,
+- say plainly if it is not yet a story — a mood or an image is not an A-to-B.
+
+It proposes; the author decides. An outline reaches `drafting-author` only once the author says it is ready.
 
 ## How this maps onto the repo's own rules
 - Stage 5 is `writing-guide/eval-checklist.md`, recorded in the story's `eval_status`. **The drafter does not run their own eval.**
