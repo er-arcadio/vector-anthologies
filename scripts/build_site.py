@@ -13,6 +13,7 @@ Usage:
 
 import argparse
 import html
+import os
 import re
 import sys
 from datetime import datetime
@@ -21,10 +22,40 @@ from pathlib import Path
 import markdown
 import yaml
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import build_board  # noqa: E402  (needs sys.path set above)
+
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?\n)---\s*\n?(.*)$", re.DOTALL)
 
 SITE_TITLE = "Vector Anthologies"
 SITE_TAGLINE = "Stories from the Vector universe, as they're written."
+
+# --------------------------------------------------------- publish policy --
+#
+# What reaches the public reading site, and in what order.
+#
+# PUBLISH_POLICY
+#   "all"      publish every story (the original behaviour, and the default)
+#   "approved" publish only stories that are neither canon_status: draft
+#              nor eval_status: flagged
+#
+# A story can always override the policy with `publish: true` / `publish: false`
+# in its own frontmatter. An explicit `publish:` value always wins.
+#
+# ORDER_MODE
+#   "date"     newest first by the `date` written (the original behaviour)
+#   "reading"  by each story's `order:` frontmatter, ascending, so the feed can
+#              be read front to back; stories without `order:` fall to the end,
+#              newest first among themselves.
+#
+# Both can be overridden per build: --publish-policy / --order, or the
+# PUBLISH_POLICY / ORDER_MODE environment variables.
+
+PUBLISH_POLICY = os.environ.get("PUBLISH_POLICY", "all")
+ORDER_MODE = os.environ.get("ORDER_MODE", "date")
+
+UNAPPROVED_CANON = {"draft"}
+UNAPPROVED_EVAL = {"flagged"}
 
 
 # ---------------------------------------------------------------- parsing --
@@ -48,6 +79,22 @@ def parse_story_file(path: Path, stories_root: Path):
     if isinstance(tags, str):
         tags = [tags]
     canon_status = str(meta.get("canon_status") or "draft")
+    eval_status = str(meta.get("eval_status") or "unreviewed")
+
+    publish_raw = meta.get("publish")
+    if isinstance(publish_raw, bool):
+        publish_override = publish_raw
+    elif isinstance(publish_raw, str) and publish_raw.strip().lower() in ("true", "yes", "false", "no"):
+        publish_override = publish_raw.strip().lower() in ("true", "yes")
+    else:
+        publish_override = None
+
+    order_raw = meta.get("order")
+    try:
+        order_key = int(order_raw) if order_raw is not None else None
+    except (TypeError, ValueError):
+        print(f"  ! {path} has a non-numeric 'order' ({order_raw!r}) — ignoring it", file=sys.stderr)
+        order_key = None
 
     date_raw = meta.get("date")
     date_obj = None
@@ -97,6 +144,9 @@ def parse_story_file(path: Path, stories_root: Path):
         "title": title,
         "tags": [str(t) for t in tags],
         "canon_status": canon_status,
+        "eval_status": eval_status,
+        "publish_override": publish_override,
+        "order_key": order_key,
         "date_obj": date_obj,
         "date_display": date_obj.strftime("%b %-d, %Y") if date_obj else "Date unknown",
         "date_sort_key": date_obj or datetime.min.date(),
@@ -119,8 +169,40 @@ def make_excerpt(body_html: str, max_len: int = 220) -> str:
     return cut + "…"
 
 
-def collect_stories(stories_root: Path):
-    stories = []
+def should_publish(story, policy: str):
+    """(publish?, reason). An explicit `publish:` in frontmatter always wins."""
+    if story["publish_override"] is True:
+        return True, "publish: true"
+    if story["publish_override"] is False:
+        return False, "publish: false in frontmatter"
+    if policy == "approved":
+        if story["canon_status"].lower() in UNAPPROVED_CANON:
+            return False, f'canon_status: {story["canon_status"]}'
+        if story["eval_status"].lower() in UNAPPROVED_EVAL:
+            return False, f'eval_status: {story["eval_status"]}'
+    return True, ""
+
+
+def sort_stories(stories, order_mode: str):
+    """date: newest first. reading: by `order:` ascending, unordered last."""
+    if order_mode == "reading":
+        # (0, order) sorts before (1, ...), so ordered stories lead; unordered
+        # keep newest-first among themselves via the negated ordinal.
+        return sorted(
+            stories,
+            key=lambda s: (
+                (0, s["order_key"], 0)
+                if s["order_key"] is not None
+                else (1, 0, -s["date_sort_key"].toordinal())
+            ),
+        )
+    return sorted(stories, key=lambda s: s["date_sort_key"], reverse=True)
+
+
+def collect_stories(stories_root: Path, policy: str = None, order_mode: str = None):
+    policy = policy or PUBLISH_POLICY
+    order_mode = order_mode or ORDER_MODE
+    stories, withheld = [], []
     if not stories_root.exists():
         return stories
     for path in sorted(stories_root.rglob("*.md")):
@@ -131,10 +213,21 @@ def collect_stories(stories_root: Path):
         if path.name.lower().endswith("-review.md"):
             continue
         story = parse_story_file(path, stories_root)
-        if story:
+        if not story:
+            continue
+        ok, reason = should_publish(story, policy)
+        if ok:
             stories.append(story)
-    stories.sort(key=lambda s: s["date_sort_key"], reverse=True)
-    return stories
+        else:
+            withheld.append((story, reason))
+
+    if withheld:
+        print(f"  · {len(withheld)} story(ies) withheld from the public site "
+              f"(policy: {policy}):")
+        for s, reason in withheld:
+            print(f"      - {s['title']}  ({s['source_path']})  — {reason}")
+
+    return sort_stories(stories, order_mode)
 
 
 # --------------------------------------------------------------- template --
@@ -403,7 +496,15 @@ footer.site-footer {
 """
 
 
+BOARD_ENABLED = False
+
+
 def page_shell(title: str, body: str, extra_head: str = "") -> str:
+    board_link = (
+        '<span style="margin-left:auto"><a href="{}board.html" '
+        'style="color:var(--accent-contrast);opacity:.85;font-size:.85rem;font-weight:600">Board</a></span>'
+        .format("" if title in (SITE_TITLE, "Editorial board") else "../")
+    ) if BOARD_ENABLED else ""
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -418,6 +519,7 @@ def page_shell(title: str, body: str, extra_head: str = "") -> str:
 <div class="topbar">
   <a class="brand" href="index.html">{html.escape(SITE_TITLE)}</a>
   <span class="tagline">{html.escape(SITE_TAGLINE)}</span>
+  {board_link}
 </div>
 {body}
 <footer class="site-footer">{html.escape(SITE_TITLE)} — updated automatically as new stories are added.</footer>
@@ -514,13 +616,24 @@ def build(repo_root: Path, out_dir: Path):
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "stories").mkdir(parents=True, exist_ok=True)
 
+    global BOARD_ENABLED
+    BOARD_ENABLED = build_board.build_board(repo_root, out_dir)
+
     (out_dir / "index.html").write_text(render_index(stories), encoding="utf-8")
+
+    if BOARD_ENABLED:
+        (out_dir / "board.html").write_text(
+            build_board.render_board_page(page_shell), encoding="utf-8")
+        (out_dir / "robots.txt").write_text(
+            "User-agent: *\nDisallow: /board.html\nDisallow: /board-data.json\n",
+            encoding="utf-8")
 
     for s in stories:
         page = render_story_page(s)
         (out_dir / "stories" / f"{s['slug']}.html").write_text(page, encoding="utf-8")
 
-    print(f"Built {len(stories)} story page(s) into {out_dir}")
+    print(f"Built {len(stories)} story page(s) into {out_dir} "
+          f"(publish: {PUBLISH_POLICY}, order: {ORDER_MODE})")
     for s in stories:
         print(f"  - {s['date_display']:>12}  [{s['category']}]  {s['title']}  ({s['source_path']})")
 
@@ -529,7 +642,20 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--out", default="_site", help="Output directory (default: _site)")
     parser.add_argument("--repo-root", default=".", help="Repo root (default: current directory)")
+    parser.add_argument("--publish-policy", choices=["all", "approved"], default=None,
+                        help="all: publish every story (default). "
+                             "approved: withhold canon_status 'draft' and eval_status 'flagged'. "
+                             "A story's own `publish:` frontmatter always wins.")
+    parser.add_argument("--order", choices=["date", "reading"], default=None,
+                        help="date: newest first by the date written (default). "
+                             "reading: by each story's `order:` frontmatter, ascending.")
     args = parser.parse_args()
+
+    global PUBLISH_POLICY, ORDER_MODE
+    if args.publish_policy:
+        PUBLISH_POLICY = args.publish_policy
+    if args.order:
+        ORDER_MODE = args.order
 
     repo_root = Path(args.repo_root).resolve()
     out_dir = Path(args.out).resolve()

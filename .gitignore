@@ -1,2 +1,6 @@
 # Generated site output (built by scripts/build_site.py / GitHub Actions)
 _site/
+
+# Python bytecode from scripts/
+__pycache__/
+*.pyc

@@ -1,6 +1,6 @@
 # CLAUDE.md — stories/
 
-This is where actual prose lives. Currently empty — a `.gitkeep` placeholder is the only thing here so Git tracks the folder.
+This is where actual prose lives. Currently one draft: `vector/arc-05/the-name-first.md` (flagged, pre-standards).
 
 ## Before writing a story here
 
@@ -63,6 +63,28 @@ Switch between them freely from piece to piece. The one thing not to do is recla
 Required for `arc-advancing` stories; optional for `single-beat` pieces (where "Effect I'm going for:" is the one line worth recording instead).
 
 An arc-advancing story needs a protagonist moving from a starting point to a changed one, a want, and a real obstacle — not just a mood or an image. Point A and Point B are concrete states (a situation or condition, stated as a real before-and-after — e.g. "guarded, hiding the power" → "told his mother, first taste of trusting someone with it"), not a pair of abstract lessons or themes. Fill in the `<!-- story shape -->` block above from the `character-journey-worksheet.md` / `outline-checklist.md` pass you already ran before drafting (see "Before writing a story here"). This makes the want/need/obstacle/resolution visible and reviewable instead of something the outline stage privately assumed and the reader has to reverse-engineer. Keep it in the file — it's cheap context for the next person (or agent) who touches this story, and it's the first thing `eval-checklist.md` checks.
+
+## `publish` and `order` — controlling the public site
+
+Two optional frontmatter fields control what reaches the reading site and in what order. Both were added because the generator previously published **every** file under `stories/` regardless of status.
+
+```markdown
+publish: false     # keep this story off the public site, whatever the policy
+order: 3           # reading-order position, used when the site is built in reading order
+```
+
+**`publish`** — an explicit override that always wins. `publish: false` withholds a story even from an otherwise-publishing build; `publish: true` forces one through even when the build policy would withhold it. Omit the field for normal behaviour.
+
+**The build policy** decides what happens to stories with no `publish` field:
+
+| Policy | Behaviour |
+|---|---|
+| `all` (default) | Publish everything, as before. |
+| `approved` | Withhold `canon_status: draft` and `eval_status: flagged`. |
+
+Set it per build with `--publish-policy approved`, or with the `PUBLISH_POLICY` environment variable in `.github/workflows/pages.yml`. Every withheld story is named in the build log with the reason, so nothing disappears silently.
+
+**`order`** — an integer. With `--order reading` (or `ORDER_MODE=reading`), the feed is sorted by `order` ascending so it can be read front to back; stories without an `order` fall to the end, newest first among themselves. The default remains `--order date`: newest first by the date written.
 
 ## `canon_status` matters
 
