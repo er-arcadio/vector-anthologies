@@ -117,7 +117,9 @@ ORDER_MODE=reading ./scripts/preview.sh            # preview in reading order
 
 The reading site carries a second tab, **Board**, holding the Kanban, the user stories, the project charter and the audits. It is encrypted at rest and decrypted in the browser with a passphrase — nothing is sent anywhere, and there is no server.
 
-Set the passphrase once, under **Settings → Secrets and variables → Actions**, as a repository secret named `BOARD_PASSPHRASE` (12 characters or more). Without that secret the board tab is **not built at all** — the board is never published in plaintext.
+Set the passphrase once, under **Settings → Secrets and variables → Actions**, as a repository secret named `BOARD_PASSPHRASE` (8 characters or more). Without that secret the board tab is **not built at all** — the board is never published in plaintext.
+
+A short, memorable passphrase is fine here: the repo is public, so `board/` is already readable on GitHub and the encrypted payload holds nothing the repo does not. The passphrase keeps project management off the public reading site rather than protecting a secret. If the board ever starts carrying something the repo does not, lengthen it.
 
 Note that this repo is public, so the `board/` markdown itself is readable on GitHub. The encrypted tab keeps the board off the reading site; it does not hide the source files. See `board/tickets/T-015.md`.
 

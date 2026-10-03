@@ -12,6 +12,18 @@ GitHub Actions secret in CI). With no passphrase set, this module reports
 that it is unconfigured and the site build omits the board tab entirely --
 it never emits the board in plaintext.
 
+On how strong the passphrase needs to be: this repo is public, so board/
+is already readable on GitHub and the encrypted payload carries nothing
+the repo does not. The passphrase's job is to keep project management off
+the public *reading site*, not to protect a secret -- so a short, memorable
+one is a reasonable choice. The 8-character floor exists only to catch an
+empty or throwaway value.
+
+That changes if the board ever carries something the repo does not -- plot
+that is not committed, submission strategy, anything private. At that point
+the passphrase becomes load-bearing and should get longer. See
+board/tickets/T-015.md.
+
 Usage:
     BOARD_PASSPHRASE='...' python3 scripts/build_board.py --out _site
 """
@@ -29,7 +41,7 @@ PBKDF2_ITERATIONS = 310_000
 KEY_LEN = 32
 SALT_LEN = 16
 IV_LEN = 12
-MIN_PASSPHRASE_LEN = 12
+MIN_PASSPHRASE_LEN = 8
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?\n)---\s*\n?(.*)$", re.DOTALL)
 
@@ -143,8 +155,7 @@ def get_passphrase():
     if not pw:
         return None, "BOARD_PASSPHRASE is not set"
     if len(pw) < MIN_PASSPHRASE_LEN:
-        return None, (f"BOARD_PASSPHRASE is shorter than {MIN_PASSPHRASE_LEN} characters. "
-                      "The encrypted payload is public, so a short passphrase is brute-forceable offline")
+        return None, (f"BOARD_PASSPHRASE is shorter than {MIN_PASSPHRASE_LEN} characters")
     return pw, None
 
 
