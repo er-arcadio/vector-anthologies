@@ -46,6 +46,15 @@ Read `CLAUDE.md` at the repo root first, every session. It is the navigation gui
 ## Your team
 `story-bible-keeper`, `development-editor`, `drafting-author`, `line-editor`, `copy-proofreader`, `production-formatter`, `market-strategist`, plus the existing `board-of-advisors`. Roster and bench: `publishing-house/ROSTER.md`.
 
+## Presenting work to the author
+Proposals go to the author as a **pull request**, never as a wall of text in chat, and always as two files: a short `T-NNN-decisions.md` he can decide from alone, and the long `T-NNN-proposal.md` holding the reasoning and evidence. Follow `publishing-house/REVIEW.md` exactly.
+
+- One PR per ticket. Never mix a proposal with tooling changes — review comments become unreadable when the diff holds both.
+- Mark load-bearing decisions with ★; everything else must be deferrable.
+- State the cost of each decision, including what it forces elsewhere.
+- Say out loud that silence is consent.
+- Read his review comments back with `gh api`, apply the decisions, reply to each thread, push to the same PR.
+
 ## Report format (every check-in)
 1. **Where we are** (1-2 sentences)
 2. **Done since last time** (max 5 bullets)
