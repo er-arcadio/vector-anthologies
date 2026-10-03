@@ -45,6 +45,26 @@ MIN_PASSPHRASE_LEN = 8
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?\n)---\s*\n?(.*)$", re.DOTALL)
 
+# GitHub-style task list items: python-markdown leaves the literal "[ ]" in
+# place, so turn them into styled checkboxes after rendering.
+TASK_OPEN_RE = re.compile(r"<li>\s*\[ \]\s*")
+TASK_DONE_RE = re.compile(r"<li>\s*\[[xX]\]\s*")
+
+
+def md_to_html(text: str) -> str:
+    """Render board markdown to HTML. Falls back to escaped text."""
+    if not text:
+        return ""
+    try:
+        import markdown
+        html_out = markdown.markdown(text, extensions=["extra", "sane_lists", "tables"])
+    except Exception:
+        from html import escape
+        return "<pre>" + escape(text) + "</pre>"
+    html_out = TASK_DONE_RE.sub('<li class="task done"><span class="box">\u2611</span>', html_out)
+    html_out = TASK_OPEN_RE.sub('<li class="task"><span class="box">\u2610</span>', html_out)
+    return html_out
+
 COLUMNS = [
     {"id": "backlog", "label": "Backlog"},
     {"id": "ready", "label": "Ready"},
@@ -88,7 +108,9 @@ def read_dir(board: Path, sub: str):
         meta, intro, sections = parse_md(f)
         if meta.get("id"):
             meta["intro"] = intro
+            meta["introHtml"] = md_to_html(intro)
             meta["sections"] = sections
+            meta["sectionsHtml"] = {k: md_to_html(v) for k, v in sections.items()}
             out.append(meta)
     return out
 
@@ -117,14 +139,15 @@ def collect_board(board: Path) -> dict:
     adir = board / "audit"
     if adir.exists():
         for f in sorted(adir.glob("*.md")):
-            audits.append({"name": f.name, "text": f.read_text(encoding="utf-8")})
+            raw = f.read_text(encoding="utf-8")
+            audits.append({"name": f.name, "html": md_to_html(raw)})
 
     return {
         "columns": COLUMNS,
         "tickets": tickets,
         "stories": stories,
-        "project": read_text(board, "PROJECT.md"),
-        "decisions": read_text(board, "DECISIONS.md"),
+        "projectHtml": md_to_html(read_text(board, "PROJECT.md")),
+        "decisionsHtml": md_to_html(read_text(board, "DECISIONS.md")),
         "audits": audits,
     }
 
@@ -256,9 +279,37 @@ BOARD_CSS = """
 .progress i { display: block; height: 100%; background: var(--accent); }
 .asa { color: var(--text-secondary); margin: 6px 0; font-size: 0.9rem; }
 .checks { list-style: none; padding: 0; margin: 6px 0 10px; font-size: 0.87rem; }
-.doc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; }
-.doc pre { white-space: pre-wrap; font: inherit; margin: 0; }
+.doc { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 22px; }
 .audit-pick { margin-bottom: 12px; }
+
+/* Rendered markdown, shared by the doc views and the ticket dialog. */
+.md { font-size: 0.93rem; line-height: 1.6; }
+.md > *:first-child { margin-top: 0; }
+.md > *:last-child { margin-bottom: 0; }
+.md h1 { font-size: 1.3rem; margin: 1.3em 0 0.4em; line-height: 1.25; }
+.md h2 { font-size: 1.08rem; margin: 1.5em 0 0.4em; padding-bottom: 4px; border-bottom: 1px solid var(--border); }
+.md h3 { font-size: 0.97rem; margin: 1.3em 0 0.3em; }
+.md h4, .md h5, .md h6 { font-size: 0.9rem; margin: 1.1em 0 0.3em; color: var(--text-secondary); }
+.md p { margin: 0 0 0.8em; }
+.md ul, .md ol { margin: 0 0 0.9em; padding-left: 1.3em; }
+.md li { margin: 0.22em 0; }
+.md li.task { list-style: none; margin-left: -1.3em; padding-left: 0; display: flex; gap: 7px; align-items: baseline; }
+.md li.task .box { flex: none; color: var(--text-secondary); }
+.md li.task.done { color: var(--text-secondary); }
+.md li.task.done .box { color: var(--accent); }
+.md strong { font-weight: 680; }
+.md code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.86em;
+  background: color-mix(in srgb, var(--text) 8%, transparent); padding: 1px 5px; border-radius: 4px; }
+.md pre { background: color-mix(in srgb, var(--text) 7%, transparent); padding: 12px 14px;
+  border-radius: 8px; overflow-x: auto; margin: 0 0 0.9em; }
+.md pre code { background: none; padding: 0; font-size: 0.85em; }
+.md blockquote { border-left: 3px solid var(--accent); margin: 0 0 0.9em; padding: 2px 0 2px 13px; color: var(--text-secondary); }
+.md hr { border: 0; border-top: 1px solid var(--border); margin: 1.6em 0; }
+.md a { color: var(--accent); }
+.md table { border-collapse: collapse; width: 100%; margin: 0 0 1em; font-size: 0.88rem; display: block; overflow-x: auto; }
+.md th, .md td { border: 1px solid var(--border); padding: 6px 10px; text-align: left; vertical-align: top; }
+.md th { background: color-mix(in srgb, var(--text) 6%, transparent); font-weight: 650; white-space: nowrap; }
+.md tbody tr:nth-child(even) { background: color-mix(in srgb, var(--text) 3%, transparent); }
 
 dialog.tdlg { border: 1px solid var(--border); border-radius: 14px; background: var(--surface);
   color: var(--text); width: min(700px, 94vw); padding: 0; }
@@ -269,8 +320,7 @@ dialog.tdlg::backdrop { background: rgba(0,0,0,0.5); }
 .tdlg .dbody { padding: 6px 18px 20px; overflow: auto; max-height: 68vh; }
 .tdlg h4 { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.07em;
   color: var(--text-secondary); margin: 15px 0 4px; }
-.tdlg ul { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; }
-.tdlg li { margin: 3px 0; }
+
 .board-foot { color: var(--text-secondary); font-size: 0.75rem; margin-top: 18px; }
 @media (max-width: 680px) { .kanban { grid-auto-flow: row; grid-auto-columns: auto; } }
 """
@@ -293,19 +343,13 @@ BOARD_JS = r"""
     return JSON.parse(new TextDecoder().decode(plain));
   }
 
-  function bullets(parent, text) {
-    if (!text) return;
-    var ul = el('ul');
-    text.split('\n').forEach(function (raw) {
-      var line = raw.trim(); if (!line) return;
-      var box = line.match(/^-\s+\[( |x|X)\]\s+(.*)$/), bl = line.match(/^[-*]\s+(.*)$/);
-      var li = el('li');
-      if (box) li.textContent = (box[1] === ' ' ? '☐ ' : '☑ ') + box[2];
-      else if (bl) li.textContent = '• ' + bl[1];
-      else li.textContent = line;
-      ul.appendChild(li);
-    });
-    parent.appendChild(ul);
+  // Board markdown is rendered to HTML at build time (scripts/build_board.py)
+  // and travels inside the encrypted payload, so there is no parser here.
+  function mdBlock(parent, html) {
+    if (!html) return;
+    var d = el('div', 'md');
+    d.innerHTML = html;
+    parent.appendChild(d);
   }
 
   function openTicket(t) {
@@ -322,8 +366,8 @@ BOARD_JS = r"""
     }
     ['Decision needed', 'Goal', 'Inputs', 'Outputs', 'Definition of done', 'Work log', 'Decision log']
       .forEach(function (k) {
-        var v = t.sections && t.sections[k]; if (!v) return;
-        b.appendChild(el('h4', null, k)); bullets(b, v);
+        var v = t.sectionsHtml && t.sectionsHtml[k]; if (!v) return;
+        b.appendChild(el('h4', null, k)); mdBlock(b, v);
       });
     $('#tdlg').showModal();
   }
@@ -374,10 +418,11 @@ BOARD_JS = r"""
         fill.style.width = (total ? Math.round(100 * done / total) : 0) + '%';
         bar.appendChild(fill); card.appendChild(bar);
         card.appendChild(el('div', 'kid', done + ' of ' + total + ' tickets done'));
-        if (s.intro) card.appendChild(el('p', 'asa', s.intro.replace(/\*\*/g, '')));
-        if (s.sections && s.sections['Acceptance criteria']) {
-          var holder = el('div'); bullets(holder, s.sections['Acceptance criteria']);
-          var ul = holder.firstChild; if (ul) { ul.className = 'checks'; card.appendChild(ul); }
+        if (s.introHtml) {
+          var intro = el('div', 'md asa'); intro.innerHTML = s.introHtml; card.appendChild(intro);
+        }
+        if (s.sectionsHtml && s.sectionsHtml['Acceptance criteria']) {
+          mdBlock(card, s.sectionsHtml['Acceptance criteria']);
         }
         var chips = el('div', 'chips');
         (s.ticketIds || []).forEach(function (id) {
@@ -395,9 +440,10 @@ BOARD_JS = r"""
     });
   }
 
-  function renderDoc(root, title, text) {
-    var d = el('div', 'doc'); d.appendChild(el('h2', null, title));
-    var pre = el('pre'); pre.textContent = text || 'Nothing recorded yet.'; d.appendChild(pre);
+  function renderDoc(root, title, html) {
+    var d = el('div', 'doc');
+    if (html) mdBlock(d, html);
+    else { d.appendChild(el('h2', null, title)); d.appendChild(el('p', 'asa', 'Nothing recorded yet.')); }
     root.appendChild(d);
   }
 
@@ -409,14 +455,17 @@ BOARD_JS = r"""
     sel.value = String(auditIdx);
     sel.addEventListener('change', function () { auditIdx = Number(sel.value); render(); });
     root.appendChild(sel);
-    renderDoc(root, list[auditIdx].name, list[auditIdx].text);
+    renderDoc(root, list[auditIdx].name, list[auditIdx].html);
   }
 
   function render() {
     var root = $('#boardView'); root.textContent = '';
     if (view === 'kanban') renderKanban(root);
     else if (view === 'stories') renderStories(root);
-    else if (view === 'project') { renderDoc(root, 'Project charter', DATA.project); renderDoc(root, 'Decision log', DATA.decisions); }
+    else if (view === 'project') {
+      renderDoc(root, 'Project charter', DATA.projectHtml);
+      renderDoc(root, 'Decision log', DATA.decisionsHtml);
+    }
     else renderAudits(root);
 
     var needs = DATA.tickets.filter(function (t) { return t.status === 'awaiting_author'; });
