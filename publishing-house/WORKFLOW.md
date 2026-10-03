@@ -39,6 +39,8 @@ It proposes; the author decides. An outline reaches `drafting-author` only once 
 - Stage 10 exists because `stories/CLAUDE.md` requires the relevant `story-bible/` file to be updated once a canon-locking story is finalised. That update is a canon change, so it is the author's call.
 
 ## Gates
+Gates are reviewed as pull requests — see `publishing-house/REVIEW.md` for the two-file format and the review protocol.
+
 A gate is a ticket in `awaiting_author`. The lead prepares a decision packet so approving takes minutes:
 - What is being approved, in one sentence, with file paths.
 - A short summary and the lead's recommendation.
