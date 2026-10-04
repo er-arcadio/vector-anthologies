@@ -57,21 +57,44 @@ That is a significantly better story. It retrofits meaning onto a beat that was 
 
 It also gives Vinny something canon currently lacks: **a refuge.** Right now his file is unbroken grimness — abusive father, the ring, the cult, Theo dying, the bill coming due. A place he went as a kid because it was *interesting*, where he practised because it was *fun*, makes the later collapse read as loss rather than trajectory. `vinny-black.md` says *"the story never lets him see the balance"* — this gives the reader something to measure the balance against.
 
-### The three conflicts
+### Resolved 2026-10-04
 
-1. **Iris has no powers.** Decision 1. Hard conflict with `iris.md`.
-2. **"Instinct" undercuts Arc 7's "last autonomous choice."** Decision 2.
-3. **Arc 8 says Eli is alone.** Decision 3 — the one that reaches furthest.
+1. **It was Maya Vale, not Iris.** `onset-timeline.md` gives her onset **2013**, surfacing **Arc 6 (2020)** — seven years of broken-tier telepathy that her file says nothing about. Vinny sensing her through those years makes him the only person who knows she exists, and gives him a second reason for the other world: somewhere she cannot reach.
+2. **Vinny's exit stays a choice.** `arc-07.md` is unchanged. Only the *why that place* is added.
+
+### Still open
+
+3. **Did Vinny go there too, or only send Eli?** Decision 3 — the last blocker.
 
 **Destination, once resolved:** `story-bible/characters/vinny-black.md` (a new bullet), `arc-07.md` (reframe the deposit), `arc-08.md` (traces, if decision 3a).
 
-**Proposed text for `vinny-black.md`, assuming decisions 1(a or c), 2(c), 3(a):**
+**Proposed text for `vinny-black.md`** (reflects the Maya resolution; assumes decision 3a):
 
 > - **The other world.** From early on — before the cult, while the book was still just a book — Vinny could open a way into somewhere else, and went often. A world full of living things, built wrong in ways he found fascinating rather than frightening. He thought of it as a playground. He practised there, because practice at home had consequences and practice there had none, and because it was the only place where nobody had decided in advance what he was. It is the one thing in his life he found for himself and enjoyed without needing it to prove anything.
 >
 >   Staying too long always brought it back — the rage, the sharpening of his motives, the pull home. He never worked out whether the world was doing that or whether it was just what happened when he stopped being distracted. He went less and less as the dark arts took hold; the playground stopped being interesting around the time he stopped being a person who played.
 >
 >   Write it with no nostalgia from Vinny himself. He does not reminisce. The reader should notice the loss; he never does.
+>
+> - **The mind he could not match.** From around 2013 he can feel something out there he has no name for — a mind, enormous, unmanaged, nowhere near him and somehow adjacent to everything. It is Maya Vale, seven years before anyone else knows she exists, and he never learns that. It is a second reason for the other world: distance from the one thing he has encountered that he cannot out-practise. He tells nobody, because there is nobody to tell, and because admitting something outclasses him is the one thing he will not do.
+
+**Proposed text for `villains/maya-vale.md`:**
+
+> - **2013–2020, before anyone knows.** Her telepathy arrives in 2013 and she does not surface until Arc 6. Those seven years are not empty: she is a young woman with total cognitive control and an explosive disorder the accident made nearly unmanageable, living inside other people's heads with no one she can say so to. One person half-registers her in that time — Vinny Black, who feels a mind he cannot match and puts distance between them. Neither ever identifies the other. See `../maya-vale-book.md`.
+
+**Proposed new file — `story-bible/maya-vale-book.md`:**
+
+> # Maya's book — concept and format
+>
+> A companion volume told entirely from Maya Vale's point of view, covering 2013–2020: onset to the moment Arc 6 finds her.
+>
+> **Format.** Diary entries. **Each entry is a mind she has been inside** — rendered in that person's own register, their own vocabulary, their own self-justifications — with Maya's narration threaded between entries as the one continuous consciousness. The reader has to orient at the top of every entry and work out whose head this is. That disorientation *is* the power; it is not described anywhere, it is simply what reading the book feels like.
+>
+> **Why a diary.** A telepath has no one to talk to — everyone she could confide in is someone she has already read. The diary is the only place she speaks as herself, which is why the form is not decorative.
+>
+> **What it earns.** `villains/maya-vale.md` currently asserts her Arc 6 state rather than building it. This book is where the isolation that makes her turn — *"Finds someone drowning in the same isolation she drowns in publicly"* — gets paid for in advance.
+>
+> **Reading position:** see T-017 decision 7.
 
 **Proposed reframe for `arc-07.md`:**
 
@@ -111,6 +134,8 @@ The format is strong, and strong for a specific reason: it makes the *reader* do
 
 It also solves a problem telepath stories usually fail at: mind-reading written conventionally is just omniscience with extra steps. Diary form forces the minds to be *discrete* and *subjective* — you get each person as they'd narrate themselves, not as a telepath summarises them.
 
-**What I can't resolve:** whose book. The only telepath in Vector canon is **Maya Vale** (`onset-timeline.md`: BROKEN — MIND, total cognitive control, onset 2013, surfaces Arc 6). The `reference/` roster has no telepath character. See decision 6.
+**Resolved 2026-10-04: it is Maya Vale's book**, introducing her from her own POV.
 
-**Destination:** depends entirely on decision 6. If Maya, a new file under `story-bible/`. If an anthology character, `reference/`. If separate, out of this repo's scope.
+The subject is the seven years `maya-vale.md` currently skips — 2013 to 2020, onset to Arc 6. That is the strongest possible use of it: her file *asserts* the isolation that makes her turn, and this is where it gets earned instead.
+
+**Destination:** new file `story-bible/maya-vale-book.md`, with `villains/maya-vale.md` pointing at it. Proposed text above. Reading position is decision 7.
